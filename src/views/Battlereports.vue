@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
-    <v-container>
+  <div class="Battlereports">
+     <v-container>
       <v-row>
         <v-col>
+          test
         </v-col>
       </v-row>
     </v-container>
@@ -12,9 +13,14 @@
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Battlereports',
+
   components: {
 
-  }
-}
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>

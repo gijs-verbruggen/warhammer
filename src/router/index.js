@@ -11,13 +11,45 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/battlereports',
+    name: 'Battlereports',
+    component: () => import('../views/Battlereports.vue'),
+    children : [{
+      path : ':id',
+      name : 'battlereportsSelection',
+      component: () => import('../views/BattlereportsSelection.vue')
+    }]
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('../views/Gallery.vue'),
+    children : [{
+      path : ':id',
+      name : 'battlereportSelection',
+      component: () => import('../views/BattlereportsSelection.vue')
+    }]
+  },
+  {
+    path: '/armylist',
+    name: 'Armylist',
+    component: () => import('../views/Armylist.vue'),
+    children : [{
+      path : '/aos',
+      name : 'AOS',
+      component: () => import('../views/ArmylistAOS.vue')
+    },
+    {
+      path : '/40k',
+      name : '40K',
+      component: () => import('../views/Armylist40K.vue')
+    }]
+  },
+  {
+    path: '/tournaments',
+    name: 'Tournaments',
+    component: () => import('../views/Tournaments.vue'),
+  },
 ]
 
 const router = new VueRouter({
