@@ -15,33 +15,43 @@ const routes = [
     name: 'Battlereports',
     component: () => import('../views/Battlereports.vue'),
     children : [{
-      path : ':id',
-      name : 'battlereportsSelection',
-      component: () => import('../views/BattlereportsSelection.vue')
+      path : '/battlereports/40k',
+      name : 'Battlereports40k',
+      component: () => import('../views/battlereports/Battlereports40k.vue'),
+      children : [{
+        path : '/battlereports/40k:id',
+        name : 'BattlereportsSelection',
+        component: () => import('../views/battlereports/BattlereportsSelection.vue')
+      }]
+    },
+    {
+      path : '/battlereports/aos',
+      name : 'BattlereportsAos',
+      component: () => import('../views/battlereports/BattlereportsAos.vue'),
+      children : [{
+        path : '/battlereports/aos:id',
+        name : 'BattlereportsSelection',
+        component: () => import('../views/battlereports/BattlereportsSelection.vue')
+      }]
     }]
   },
   {
     path: '/gallery',
     name: 'Gallery',
     component: () => import('../views/Gallery.vue'),
-    children : [{
-      path : ':id',
-      name : 'battlereportSelection',
-      component: () => import('../views/BattlereportsSelection.vue')
-    }]
   },
   {
     path: '/armylist',
     name: 'Armylist',
     component: () => import('../views/Armylist.vue'),
     children : [{
-      path : '/aos',
-      name : 'AOS',
+      path : '/armylist/aos',
+      name : 'ArmylistAos',
       component: () => import('../views/ArmylistAOS.vue')
     },
     {
-      path : '/40k',
-      name : '40K',
+      path : '/armylist/40k',
+      name : 'Armylist40k',
       component: () => import('../views/Armylist40K.vue')
     }]
   },
