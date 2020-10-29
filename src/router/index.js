@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,20 +7,16 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('../views/Home.vue'),
   },
   {
-    path: '/battlereports',
-    name: 'Battlereports',
-    component: () => import('../views/Battlereports.vue'),
-    children : [{
       path : '/battlereports/40k',
       name : 'Battlereports40k',
       component: () => import('../views/battlereports/Battlereports40k.vue'),
       children : [{
-        path : '/battlereports/40k:id',
-        name : 'BattlereportsSelection',
-        component: () => import('../views/battlereports/BattlereportsSelection.vue')
+        path : '/:id',
+        name : 'BattlereportsSelection40k',
+        component: () => import('../views/battlereports/BattlereportsSelection.vue'),
       }]
     },
     {
@@ -29,12 +24,11 @@ const routes = [
       name : 'BattlereportsAos',
       component: () => import('../views/battlereports/BattlereportsAos.vue'),
       children : [{
-        path : '/battlereports/aos:id',
-        name : 'BattlereportsSelection',
-        component: () => import('../views/battlereports/BattlereportsSelection.vue')
+        path : '/:id',
+        name : 'BattlereportsSelectionAos',
+        component: () => import('../views/battlereports/BattlereportsSelection.vue'),
       }]
-    }]
-  },
+    },
   {
     path: '/gallery',
     name: 'Gallery',
@@ -47,12 +41,12 @@ const routes = [
     children : [{
       path : '/armylist/aos',
       name : 'ArmylistAos',
-      component: () => import('../views/ArmylistAOS.vue')
+      component: () => import('../views/ArmylistAOS.vue'),
     },
     {
       path : '/armylist/40k',
       name : 'Armylist40k',
-      component: () => import('../views/Armylist40K.vue')
+      component: () => import('../views/Armylist40K.vue'),
     }]
   },
   {
