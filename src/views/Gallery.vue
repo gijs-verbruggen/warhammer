@@ -36,11 +36,7 @@
           class="d-flex child-flex"
           cols="3"
         >
-          <v-card
-            class="ma-auto"
-            max-width="400"
-            @click="zoomOpen(project.src)"
-          >
+          <v-card class="ma-auto" max-width="400" @click="zoomOpen(project)">
             <v-img
               :src="require(`../../src/assets/images/gallery/${project.src}`)"
               :alt="project.title"
@@ -58,22 +54,17 @@
             </v-img>
           </v-card>
         </v-col>
-        <v-dialog v-model="dialog" width="700">
-          <v-card class="ma-auto" max-width="900">
-            <v-btn @click="zoomClose()" icon>
-              <v-icon>fa-times</v-icon>
-            </v-btn>
-            <v-img :src="selectedImage" aspect-ratio="1" class="grey lighten-2">
-              <template v-slot:placeholder>
-                <v-row class="fill-height ma-0" align="center" justify="center">
-                  <v-progress-circular
-                    indeterminate
-                    color="grey lighten-5"
-                  ></v-progress-circular>
-                </v-row>
-              </template>
-            </v-img>
-          </v-card>
+        <v-dialog v-model="dialog" max-width="600">
+          <div>
+            <v-carousel v-model="model">
+              <v-carousel-item
+                v-for="(item, i) in selectedcarousel"
+                :key="i"
+                :src="item"
+              >
+              </v-carousel-item>
+            </v-carousel>
+          </div>
         </v-dialog>
       </v-row>
     </v-container>
@@ -82,15 +73,19 @@
 
 <script>
 import dataGallery from "../data/gallery/data.js";
+import carouselGallery from "../data/gallery/carousel.js";
 export default {
   name: "Gallery",
   components: {},
   data: () => ({
     projects: dataGallery,
+    carousel: carouselGallery,
     event: null,
     clicked: false,
     dialog: false,
-    selectedImage: null,
+    selectedId: null,
+    selectedcarousel: [],
+    model: 0,
   }),
   computed: {
     filteredProjects() {
@@ -111,15 +106,18 @@ export default {
     filter(event) {
       this.event = event;
     },
-    zoomOpen(url) {
-      console.log(url);
-      this.selectedImage = require("../../src/assets/images/gallery/" + url);
+    zoomOpen(project) {
+      this.selectedcarousel = [];
+      this.selectedId = project.id;
+      var i;
+      for (i = 0; i < this.carousel.length; i++) {
+        if (this.carousel[i].linkId === this.selectedId) {
+          this.selectedcarousel.push(
+            require("../../src/assets/images/gallery/" + this.carousel[i].src)
+          );
+        }
+      }
       this.dialog = true;
-      console.log(this.selectedImage);
-    },
-    zoomClose() {
-      this.dialog = false;
-      this.selectedImage = null;
     },
   },
 };

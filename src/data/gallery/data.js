@@ -5,15 +5,16 @@ const projects = [
         title: 'Chaos Lord',
         date: '3-16-2021',
         name: 'Gijs',
-        src: 'chaoslordkrakadrak.jpeg'
+        src: 'chaoslordkrakadrak1.jpeg'
     },
     {
         id: '2',
+        linkId: '2',
         category: 'blades of khorne',
         title: 'Slaughter Priest',
         date: '3-16-2021',
         name: 'Gijs',
-        src: 'slaughterpriest.jpeg'
+        src: 'slaughterpriest1.jpeg'
     },
     {
         id: '3',
@@ -21,7 +22,7 @@ const projects = [
         title: 'Varanguard',
         date: '3-16-2021',
         name: 'Gijs',
-        src: 'varanguardnurgle.jpeg'
+        src: 'varanguard_nurgle1.jpeg'
     },
     {
         id: '4',
@@ -29,7 +30,7 @@ const projects = [
         title: 'Gaunt Summoner of Tzeentch',
         date: '3-16-2021',
         name: 'Gijs',
-        src: 'gauntsummoneroftzeentch.jpeg'
+        src: 'gaunt_summoner_of_tzeentch1.jpeg'
     },
     {
         id: '5',
@@ -45,7 +46,23 @@ const projects = [
         title: 'Bloodsecrator',
         date: '3-16-2021',
         name: 'Gijs',
-        src: 'bloodsecrator.jpeg'
+        src: 'bloodsecrator1.jpeg'
+    },
+    {
+        id: '7',
+        category: 'maggothkin of nurgle',
+        title: 'Nurgling Champion',
+        date: '3-16-2021',
+        name: 'Gijs',
+        src: 'nurgling_champion1.jpeg'
+    },
+    {
+        id: '8',
+        category: 'hedonites of slaanesh',
+        title: 'Shalaxi Helbane',
+        date: '3-16-2021',
+        name: 'Gijs',
+        src: 'shalaxi_helbane1.jpeg'
     },
 ]
 
