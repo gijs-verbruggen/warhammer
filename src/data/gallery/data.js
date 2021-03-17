@@ -5,7 +5,7 @@ const projects = [
         title: 'Chaos Lord',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'chaoslordkrakadrak.jpeg'
+        src: 'chaoslordkrakadrak.jpeg'
     },
     {
         id: '2',
@@ -13,7 +13,7 @@ const projects = [
         title: 'Slaughter Priest',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'slaughterpriest.jpeg'
+        src: 'slaughterpriest.jpeg'
     },
     {
         id: '3',
@@ -21,7 +21,7 @@ const projects = [
         title: 'Varanguard',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'varanguardnurgle.jpeg'
+        src: 'varanguardnurgle.jpeg'
     },
     {
         id: '4',
@@ -29,7 +29,7 @@ const projects = [
         title: 'Gaunt Summoner of Tzeentch',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'gauntsummoneroftzeentch.jpeg'
+        src: 'gauntsummoneroftzeentch.jpeg'
     },
     {
         id: '5',
@@ -37,15 +37,15 @@ const projects = [
         title: 'Vorgaroth the Scarred',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'vorgaroth_the_scarred.jpeg'
+        src: 'vorgaroth_the_scarred.jpeg'
     },
     {
-        id: '5',
+        id: '6',
         category: 'Blades of Khorne',
         title: 'Bloodsecrator',
         date: '3-16-2021',
         name: 'Gijs',
-        source: 'bloodsecrator.jpeg'
+        src: 'bloodsecrator.jpeg'
     },
 ]
 
