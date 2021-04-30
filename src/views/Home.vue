@@ -2,7 +2,7 @@
   <div class="home">
     <v-container>
       <v-row>
-        <v-col> test </v-col>
+        <v-col> </v-col>
       </v-row>
     </v-container>
   </div>

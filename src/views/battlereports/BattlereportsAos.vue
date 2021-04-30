@@ -1,7 +1,15 @@
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="item in items" :key="item.id">
+      <v-col
+        cols="12"
+        sm="12"
+        md="6"
+        lg="6"
+        xl="6"
+        v-for="item in items"
+        :key="item.id"
+      >
         <IconLink v-bind:item="item" />
       </v-col>
     </v-row>
@@ -13,12 +21,13 @@ import dataAos from "../../data/battlereport/aos/items.js";
 import IconLink from "../../components/IconLink.vue";
 
 export default {
-  name: "BattlereportsSelection",
+  name: "BattlereportsAos",
 
   components: { IconLink },
 
   data: () => ({
     items: dataAos,
+    sortedItems: null,
   }),
 };
 </script>

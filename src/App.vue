@@ -27,9 +27,6 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item :to="{ name: 'Battlereports40k' }">
-              <v-list-item-title>40K</v-list-item-title>
-            </v-list-item>
             <v-list-item :to="{ name: 'BattlereportsAos' }">
               <v-list-item-title>AOS</v-list-item-title>
             </v-list-item>
@@ -41,34 +38,29 @@
             Gallery
           </v-btn>
         </router-link>
-        <router-link class="mx-1" :to="{ name: 'Armylist' }">
-          <v-menu open-on-hover bottom offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn color="primary" dark v-bind="attrs" v-on="on">
-                <v-icon class="mr-1"> fas fa-clipboard-list </v-icon>
-                Armylist
-                <v-icon small class="mr-1"> fas fa-caret-down </v-icon>
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item :to="{ name: 'Armylist40k' }">
-                <v-list-item-title>40K</v-list-item-title>
-              </v-list-item>
-              <v-list-item :to="{ name: 'ArmylistAos' }">
-                <v-list-item-title>AOS</v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </router-link>
-        <router-link class="mx-1" :to="{ name: 'Tournaments' }">
+        <v-menu open-on-hover bottom offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn color="primary" dark v-bind="attrs" v-on="on">
+              <v-icon class="mr-1"> fas fa-clipboard-list </v-icon>
+              Armylist
+              <v-icon small class="mr-1"> fas fa-caret-down </v-icon>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item :to="{ name: 'ArmylistAos' }">
+              <v-list-item-title>AOS</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+        <router-link class="mx-1" :to="{ name: 'Leaderboards' }">
           <v-btn color="primary">
             <v-icon class="mr-1"> fas fa-trophy </v-icon>
-            Tournaments
+            Leaderboards
           </v-btn>
         </router-link>
       </div>
     </v-app-bar>
-    <v-main>
+    <v-main class="grey lighten-1">
       <router-view> </router-view>
     </v-main>
   </v-app>

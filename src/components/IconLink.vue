@@ -1,21 +1,19 @@
 <template>
-  <v-card class="mx-auto" max-width="400">
+  <v-card class="mx-auto">
     <v-img
       class="white--text align-end"
-      height="200px"
-      :src="itemLocal.image"
+      height="300px"
+      :src="imageSource"
       :alt="itemLocal.text"
     >
-      <v-card-title>{{ itemLocal.text }}</v-card-title>
     </v-img>
-    <v-card-subtitle class="pb-0"> {{ itemLocal.id }} </v-card-subtitle>
+    <v-card-title style="min-height: 96px">{{ itemLocal.title }}</v-card-title>
     <v-card-text class="text--primary">
-      <div>{{ itemLocal.text }}</div>
-      <div>{{ itemLocal.text }}</div>
+      <div>{{ itemLocal.date }}</div>
     </v-card-text>
     <v-card-actions>
-      <v-btn color="orange" text v-on:click="goTo(itemLocal.id)">
-        Go to Battlereoprt
+      <v-btn color="orange" text v-on:click="goTo(itemLocal.date)">
+        Go to Battlereport
       </v-btn>
     </v-card-actions>
   </v-card>
@@ -32,6 +30,12 @@ export default {
       itemLocal: { ...this.item },
     };
   },
+  computed: {
+    imageSource() {
+      return require("../../src/assets/images/battlereports/" +
+        this.itemLocal.src);
+    },
+  },
   methods: {
     goTo(key) {
       this.$router.push({ path: "/battlereports/aos/" + key });
@@ -39,3 +43,5 @@ export default {
   },
 };
 </script>
+<style>
+</style>
