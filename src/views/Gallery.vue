@@ -3,42 +3,58 @@
     <v-container>
       <v-row>
         <v-col cols="12" class="my-2 pa-0">
-          <div>
+          <div v-if="$vuetify.breakpoint.smAndUp">
             <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
               All
             </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Slaves to Darkness
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Maggothkin of Nurgle
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Hedonites of Slaanesh
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Blades of Khorne
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Disciples of Tzeentch
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Beasts of Chaos
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Skaven
-            </v-btn>
-            <v-btn @click="filter($event)" class="mr-1 mb-1" color="primary">
-              Cities of Sigmar
+            <v-btn
+              @click="filter($event)"
+              v-for="category in categories"
+              :key="category.id"
+              class="mr-1 mb-1"
+              color="primary"
+            >
+              {{ category.army }}
             </v-btn>
           </div>
+          <v-menu
+            open-on-click
+            allow-overflow
+            bottom
+            offset-y
+            v-if="$vuetify.breakpoint.smAndDown"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                outlined
+                width="100%"
+                color="primary"
+                dark
+                v-bind="attrs"
+                v-on="on"
+              >
+                <v-icon class="mr-1"> fas fa-clipboard-list </v-icon>
+                Armylist
+                <v-icon small class="mr-1"> fas fa-caret-down </v-icon>
+              </v-btn>
+            </template>
+            <v-list>
+              <v-list-item
+                v-for="category in categories"
+                :key="category.id"
+                @click="filter($event)"
+              >
+                <v-list-item-title>{{ category.army }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
         </v-col>
         <v-col
           v-for="project in filteredProjects"
           :key="project.id"
           class="gallery_photos d-flex child-flex pa-0"
           cols="12"
-          sm="12"
+          sm="6"
           md="4"
           lg="3"
           xl="3"
@@ -78,6 +94,7 @@
             </v-carousel>
           </div>
         </v-dialog>
+        <BackToTop></BackToTop>
       </v-row>
     </v-container>
   </div>
@@ -86,12 +103,16 @@
 <script>
 import dataGallery from "../data/gallery/data.js";
 import carouselGallery from "../data/gallery/carousel.js";
+import dataArmies from "../data/leaderboard/armies.js";
+import BackToTop from "../components/BackToTop.vue";
+
 export default {
   name: "Gallery",
-  components: {},
+  components: { BackToTop },
   data: () => ({
     projects: dataGallery,
     carousel: carouselGallery,
+    categories: dataArmies,
     event: null,
     clicked: false,
     dialog: false,

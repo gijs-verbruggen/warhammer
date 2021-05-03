@@ -29,5 +29,12 @@ export default {
     items: dataAos,
     sortedItems: null,
   }),
+  created() {
+    this.items.sort(function (first, last) {
+      var newest = new Date(first.date);
+      var oldest = new Date(last.date);
+      return oldest - newest;
+    });
+  },
 };
 </script>

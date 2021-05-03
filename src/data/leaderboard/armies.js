@@ -29,7 +29,7 @@ const armies = [
     },
     {
         id: 5,
-        army: 'Sons of Behemoth',
+        army: 'Sons of Behemat',
         games: 0,
         wins: 0,
         loses: 0,
@@ -78,6 +78,7 @@ const armies = [
     },
     {
         id: 12,
+
         army: 'Seraphon',
         games: 0,
         wins: 0,
@@ -92,6 +93,7 @@ const armies = [
     },
     {
         id: 14,
+
         army: 'Beasts of Chaos',
         games: 0,
         wins: 0,
@@ -106,6 +108,7 @@ const armies = [
     },
     {
         id: 16,
+
         army: 'Disciples of Tzeentch',
         games: 0,
         wins: 0,
@@ -120,6 +123,7 @@ const armies = [
     },
     {
         id: 18,
+
         army: 'Skaven',
         games: 0,
         wins: 0,
@@ -134,6 +138,7 @@ const armies = [
     },
     {
         id: 20,
+
         army: 'Legions of Nagash',
         games: 0,
         wins: 0,
@@ -148,6 +153,7 @@ const armies = [
     },
     {
         id: 22,
+
         army: 'Gloomspite Gitz',
         games: 0,
         wins: 0,

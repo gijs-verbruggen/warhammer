@@ -917,6 +917,79 @@ const carousel = [
         name: 'Gijs',
         src: 'glutos12.jpeg'
     },
+    {
+        id: '102',
+        linkId: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnission',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'gotrek1.jpeg'
+    },
+    {
+        id: '103',
+        linkId: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnission',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'gotrek2.jpeg'
+    },
+    {
+        id: '104',
+        linkId: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnission',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'gotrek3.jpeg'
+    },
+    {
+        id: '105',
+        linkId: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnission',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'gotrek4.jpeg'
+    },
+    {
+        id: '106',
+        linkId: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnission',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'gotrek5.jpeg'
+    },
+    {
+        id: '107',
+        linkId: '22',
+        category: 'Cities of Sigmar',
+        title: 'Black Guard',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'black_guard1.jpeg'
+    },
+    {
+        id: '108',
+        linkId: '22',
+        category: 'Cities of Sigmar',
+        title: 'Black Guard',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'black_guard2.jpeg'
+    },
+    {
+        id: '109',
+        linkId: '22',
+        category: 'Cities of Sigmar',
+        title: 'Black Guard',
+        date: '03-05-2021',
+        name: 'Gijs',
+        src: 'black_guard3.jpeg'
+    },
+
 ]
 
 export default carousel

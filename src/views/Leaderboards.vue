@@ -18,6 +18,7 @@
               item-text="player"
               item-value="id"
               dense
+              required
             ></v-select>
             <v-select
               v-model="armyW"
@@ -28,6 +29,7 @@
               item-text="army"
               item-value="id"
               dense
+              required
             ></v-select>
             Loser:
             <v-select
@@ -39,6 +41,7 @@
               item-text="player"
               item-value="id"
               dense
+              required
             ></v-select>
             <v-select
               v-model="armyL"
@@ -49,6 +52,7 @@
               item-text="army"
               item-value="id"
               dense
+              required
             ></v-select>
             <v-btn
               class="mr-4"
@@ -71,6 +75,41 @@
                 single-line
                 hide-details
               ></v-text-field>
+              <v-spacer></v-spacer>
+              <v-dialog v-model="dialog" max-width="500px">
+                <template v-slot:activator="{ on, attrs }">
+                  <v-btn color="primary" dark v-bind="attrs" v-on="on">
+                    New Player
+                  </v-btn>
+                </template>
+                <v-card>
+                  <v-card-title>
+                    <span class="headline">New player</span>
+                  </v-card-title>
+
+                  <v-card-text>
+                    <v-container>
+                      <v-row>
+                        <v-col cols="12">
+                          <v-text-field
+                            v-model="editedItem.player"
+                            label="Player name"
+                          ></v-text-field>
+                        </v-col>
+                      </v-row>
+                    </v-container>
+                  </v-card-text>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn color="blue darken-1" text @click="close">
+                      Cancel
+                    </v-btn>
+                    <v-btn color="blue darken-1" text @click="save">
+                      Save
+                    </v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-dialog>
             </v-card-title>
             <v-data-table
               :headers="headersPlayer"
@@ -190,13 +229,29 @@ export default {
     searchPlayers: "",
     searchArmies: "",
     error: false,
+    dialog: false,
+    editedIndex: -1,
+    editedItem: {
+      id: 0,
+      player: "",
+      games: 0,
+      wins: 0,
+      loses: 0,
+    },
+    defaultItem: {
+      name: "",
+      calories: 0,
+      fat: 0,
+      carbs: 0,
+      protein: 0,
+    },
   }),
   methods: {
     calculatedResults(items) {
       return items.map((item) =>
         Object.assign(
           {
-            winrate: (item.wins * 100) / item.games + "%",
+            winrate: (item.wins * 100) / item.games || 0,
           },
           item
         )
@@ -231,6 +286,21 @@ export default {
       this.armyW = "";
       this.armyL = "";
       this.calculatedResults();
+    },
+    close() {
+      this.dialog = false;
+      this.$nextTick(() => {
+        this.editedItem = Object.assign({}, this.defaultItem);
+        this.editedIndex = -1;
+      });
+    },
+    save() {
+      if (this.editedIndex > -1) {
+        Object.assign(this.players[this.editedIndex], this.editedItem);
+      } else {
+        this.players.push(this.editedItem);
+      }
+      this.close();
     },
   },
 };

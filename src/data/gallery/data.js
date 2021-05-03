@@ -160,6 +160,22 @@ const projects = [
         name: 'Gijs',
         src: 'putrid_blightskings1.jpeg'
     },
+    {
+        id: '21',
+        category: 'Cities of Sigmar',
+        title: 'Gotrek Gurnisson',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'gotrek1.jpeg'
+    },
+    {
+        id: '22',
+        category: 'Cities of Sigmar',
+        title: 'Black Guard',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'black_guard1.jpeg'
+    },
 ]
 
 export default projects

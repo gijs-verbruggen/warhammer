@@ -1,41 +1,10 @@
 <template>
   <v-container>
-    <!-- <v-row no-gutters>
-      <v-col cols="12" sm="12" md="12" lg="12" xl="12">
-        <v-carousel height="800">
-          <v-carousel-item
-            v-for="slide in filteredBatrep"
-            :key="slide.id"
-            :src="
-              require(`../../../src/assets/images/battlereports/${slide.date}/${slide.src}`)
-            "
-          >
-            <v-container fill-height fluid pa-0 ma-0>
-              <v-layout fill-height align-end>
-                <v-flex xs12>
-                  <v-card style="" class="carouselSlider pa-2 pb-13">
-                    <span class="headline white--text" v-text="slide.text">
-                    </span>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-carousel-item>
-        </v-carousel>
-      </v-col>
-    </v-row> -->
     <v-row v-for="slide in filteredBatrep" :key="slide.id">
-      <v-col
-        cols="12"
-        sm="12"
-        :md="colsLeft[slide.id].number"
-        :lg="colsLeft[slide.id].number"
-        :xl="colsLeft[slide.id].number"
-        v-if="slide.id % 2 == 0"
-      >
+      <v-col cols="12" sm="12" md="8" lg="8" xl="8" v-if="slide.id % 2 == 0">
         <v-card>
           <v-img
-            aspect-ratio="1"
+            aspect-ratio="1.7777778"
             max-height="600"
             :src="
               require(`../../../src/assets/images/battlereports/${slide.date}/${slide.src}`)
@@ -44,37 +13,23 @@
           </v-img>
         </v-card>
       </v-col>
-      <v-col
-        cols="12"
-        sm="12"
-        :md="colsLeft[slide.id].number"
-        :lg="colsLeft[slide.id].number"
-        :xl="colsLeft[slide.id].number"
-        v-else
-      >
-        <p class="body-1">{{ slide.text }}</p>
+      <v-col cols="12" sm="12" md="4" lg="4" xl="4" v-else>
+        <div class="text_box pa-2">
+          <h3>{{ slide.turn }}</h3>
+          <p class="body-1">{{ slide.text }}</p>
+        </div>
       </v-col>
-      <v-col
-        cols="12"
-        sm="12"
-        :md="colsRight[slide.id].number"
-        :lg="colsRight[slide.id].number"
-        :xl="colsRight[slide.id].number"
-        v-if="slide.id % 2 == 0"
-      >
-        <p class="body-1">{{ slide.text }}</p>
+      <!-- other layout -->
+      <v-col cols="12" sm="12" md="4" lg="4" xl="4" v-if="slide.id % 2 == 0">
+        <div class="text_box pa-2">
+          <h3>{{ slide.turn }}</h3>
+          <p class="body-1">{{ slide.text }}</p>
+        </div>
       </v-col>
-      <v-col
-        cols="12"
-        sm="12"
-        :md="colsRight[slide.id].number"
-        :lg="colsRight[slide.id].number"
-        :xl="colsRight[slide.id].number"
-        v-else
-      >
+      <v-col cols="12" sm="12" md="8" lg="8" xl="8" v-else>
         <v-card>
           <v-img
-            aspect-ratio="1"
+            aspect-ratio="1.7777778"
             max-height="600"
             :src="
               require(`../../../src/assets/images/battlereports/${slide.date}/${slide.src}`)
@@ -92,37 +47,22 @@ import Batrep from "../../data/battlereport/aos/data.js";
 
 export default {
   name: "BattlereportsSelection",
+  created() {
+    var i = 0;
+    for (i = 0; i < this.batrep.length; i++) {
+      this.batrep[i].date =
+        this.batrep[i].date.toLocaleDateString("nl-NL", { year: "numeric" }) +
+        "-" +
+        this.batrep[i].date.toLocaleDateString("nl-NL", { month: "numeric" }) +
+        "-" +
+        this.batrep[i].date.toLocaleDateString("nl-NL", { day: "numeric" });
+    }
+  },
   data() {
     return {
       batrep: Batrep,
       date: this.$route.params.id,
       newArray: null,
-      colsLeft: [
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-      ],
-      colsRight: [
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-        { number: "8" },
-        { number: "4" },
-      ],
     };
   },
   computed: {
@@ -140,5 +80,10 @@ export default {
 <style scoped>
 .carouselSlider {
   background-color: rgba(12, 12, 12, 0.2);
+}
+
+.text_box {
+  background-color: white;
+  border-radius: 5px;
 }
 </style>
