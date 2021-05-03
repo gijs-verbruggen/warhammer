@@ -2,7 +2,7 @@ const projects = [
     {
         id: '1',
         category: 'slaves to darkness',
-        title: 'Chaos Lord',
+        title: 'Chaos Lord on krakadrak',
         date: new Date('2021-04-27'),
         name: 'Gijs',
         src: 'chaoslordkrakadrak1.jpeg'
@@ -19,7 +19,7 @@ const projects = [
     {
         id: '3',
         category: 'slaves to darkness',
-        title: 'Varanguard',
+        title: 'Varanguard Nurgle',
         date: new Date('2021-02-14'),
         name: 'Gijs',
         src: 'varanguard_nurgle1.jpeg'
@@ -50,7 +50,7 @@ const projects = [
     },
     {
         id: '7',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Nurgling Champion',
         date: new Date('2021-03-16'),
         name: 'Gijs',
@@ -67,7 +67,7 @@ const projects = [
     {
         id: '9',
         category: 'slaves to darkness',
-        title: 'Varanguard',
+        title: 'Varanguard Slaanesh',
         date: new Date('2021-04-26'),
         name: 'Gijs',
         src: 'varanguard_slaanesh1.jpeg'
@@ -82,7 +82,7 @@ const projects = [
     },
     {
         id: '11',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Nurgling Drones',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -90,7 +90,7 @@ const projects = [
     },
     {
         id: '12',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Exalted Greater Daemon of Nurgle',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -98,7 +98,7 @@ const projects = [
     },
     {
         id: '13',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Great Unclean One',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -106,7 +106,7 @@ const projects = [
     },
     {
         id: '14',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Lord of Blights',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -114,7 +114,7 @@ const projects = [
     },
     {
         id: '15',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Lord of Plagues',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -122,8 +122,8 @@ const projects = [
     },
     {
         id: '16',
-        category: 'maggothkin of nurgle',
-        title: 'Glottkin',
+        category: 'maggotkin of nurgle',
+        title: 'The Glottkin',
         date: new Date('2021-04-27'),
         name: 'Gijs',
         src: 'glottkin1.jpeg'
@@ -138,7 +138,7 @@ const projects = [
     },
     {
         id: '18',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Rotigus',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -154,7 +154,7 @@ const projects = [
     },
     {
         id: '20',
-        category: 'maggothkin of nurgle',
+        category: 'maggotkin of nurgle',
         title: 'Putrid Blightskings',
         date: new Date('2021-04-27'),
         name: 'Gijs',
@@ -175,6 +175,86 @@ const projects = [
         date: new Date('2021-05-03'),
         name: 'Gijs',
         src: 'black_guard1.jpeg'
+    },
+    {
+        id: '23',
+        category: 'Cities of Sigmar',
+        title: 'Runelord',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'runelord1.jpeg'
+    },
+    {
+        id: '24',
+        category: 'Cities of Sigmar',
+        title: 'Irondrakes',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'irondrakes1.jpeg'
+    },
+    {
+        id: '25',
+        category: 'Cities of Sigmar',
+        title: 'Longbeards',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'longbeards1.jpeg'
+    },
+    {
+        id: '26',
+        category: 'Blades of Khorne',
+        title: 'Skull Altar',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'skull_altar1.jpeg'
+    },
+    {
+        id: '27',
+        category: 'Slaves to Darkness',
+        title: 'Chaos Sorcerer Lord',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'chaos_sorcerer_lord_nurgle1.jpeg'
+    },
+    {
+        id: '28',
+        category: 'Slaves to Darkness',
+        title: 'Chaos Sorcerer Lord Tzeentch',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'chaos_sorcerer_lord_tzeentch1.jpeg'
+    },
+    {
+        id: '29',
+        category: 'Slaves to Darkness',
+        title: 'Exalted Hero of Chaos',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'exalted_hero_of_chaos1.jpeg'
+    },
+    {
+        id: '30',
+        category: 'Maggotkin of Nurgle',
+        title: 'Festus the Leechlord',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'festus_the_leechlord1.jpeg'
+    },
+    {
+        id: '31',
+        category: 'Maggotkin of Nurgle',
+        title: 'Gutrot Spume',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'gutrot_spume1.jpeg'
+    },
+    {
+        id: '32',
+        category: 'Maggotkin of Nurgle',
+        title: 'Lord of Afflictions',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'lord_of_afflictions1.jpeg'
     },
 ]
 

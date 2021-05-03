@@ -175,3 +175,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+.p-fixed {
+  position: fixed !important;
+}
+</style>
