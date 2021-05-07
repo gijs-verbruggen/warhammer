@@ -104,7 +104,7 @@
         </v-col>
         <v-dialog v-model="dialog" max-width="800">
           <div>
-            <v-carousel v-model="selectedModel" height="800">
+            <v-carousel v-model="selectedModel" width="auto" height="auto">
               <v-carousel-item
                 v-for="(item, i) in selectedCarousel"
                 :key="i"

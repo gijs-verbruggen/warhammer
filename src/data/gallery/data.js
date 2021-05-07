@@ -256,6 +256,14 @@ const projects = [
         name: 'Gijs',
         src: 'lord_of_afflictions1.jpeg'
     },
+    {
+        id: '33',
+        category: 'Slaves to Darkness',
+        title: 'Archaon',
+        date: new Date('2021-05-03'),
+        name: 'Gijs',
+        src: 'archaon1.jpeg'
+    },
 ]
 
 export default projects

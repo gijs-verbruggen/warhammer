@@ -41,7 +41,8 @@ import dataArmyList from "../../data/armylist/aos/data.js";
 export default {
   name: "ArmyListAOS",
   data: () => ({
-    url: "http://localhost:8080/",
+    local: "http://localhost:8080/",
+    url: "https://gijs-verbruggen.com/",
     lists: dataArmyList,
   }),
   components: {},

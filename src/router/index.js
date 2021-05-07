@@ -34,6 +34,11 @@ const routes = [
     name: 'Leaderboards',
     component: () => import('../views/Leaderboards.vue'),
   },
+  {
+    path: '/custom',
+    name: 'Custom',
+    component: () => import('../views/Custom.vue'),
+  },
 ]
 
 const router = new VueRouter({

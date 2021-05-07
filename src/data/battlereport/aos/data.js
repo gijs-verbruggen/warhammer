@@ -60,7 +60,7 @@ const data = [
         linkId: 2,
         date: new Date('2020-09-25'),
         turn: 'Round 1: Sylvaneth -> Kharadron -> Everchosen.',
-        text: 'test',
+        text: 'Battle report 2020-10-09: 3-player Free For All \n - 1500pts - King of t Everchosen Jim : Kharadas see-by.',
         src: 'EOT_1.jpeg',
     },
     {
@@ -124,7 +124,7 @@ const data = [
         linkId: 3,
         date: new Date('2021-05-01'),
         turn: 'Round 1:',
-        text: 'test',
+        text: 'Primary objective most right. nurgle couldnt reach the objective.',
         src: 'img-1.jpeg',
     },
     {
@@ -132,7 +132,7 @@ const data = [
         linkId: 4,
         date: new Date('2021-05-01'),
         turn: 'Round 1:',
-        text: 'test',
+        text: 'all gargaents moved in range of the objectives and created a big advantage.',
         src: 'img-2.jpeg',
     },
     {

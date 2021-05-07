@@ -15,14 +15,14 @@ const data = [
     },
     {
         id: 3,
-        title: '1v2 Cities of Sigmar vs Kharadron Overlords and Sylvaneth 2k',
+        title: '1v2 Cities of Sigmar vs Kharadron Overlords and Nighthaunt 2k',
         date: new Date('2021-04-30'),
         scenario: 'Forcing the Hand',
         src: '2021-4-30/img-1.jpeg',
     },
     {
         id: 4,
-        title: '1v1 Maggotkin of Nurgle vs Sons of Behemoth',
+        title: '1v1 Maggotkin of Nurgle vs Sons of Behemoth 2k',
         date: new Date('2021-05-01'),
         scenario: 'Shifting Objectives',
         src: '2021-5-1/img-1.jpeg',

@@ -85,6 +85,17 @@
             Leaderboards
           </v-btn>
         </router-link>
+        <!-- Custom -->
+        <router-link
+          class="mx-1"
+          :to="{ name: 'Custom' }"
+          v-if="$vuetify.breakpoint.smAndUp"
+        >
+          <v-btn color="primary">
+            <v-icon class="mr-1"> fas fa-file-alt </v-icon>
+            Custom
+          </v-btn>
+        </router-link>
         <v-spacer></v-spacer>
         <v-btn v-if="$vuetify.breakpoint.smAndDown" icon @click="drawer = true">
           <v-icon>fas fa-bars</v-icon>
@@ -97,6 +108,7 @@
       v-model="drawer"
       absolute
       temporary
+      v-if="$vuetify.breakpoint.smAndDown"
     >
       <v-list nav dense>
         <v-list-item-group active-class="text--accent-4">
@@ -154,6 +166,13 @@
               <v-icon>fas fa-trophy</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Leaderboards</v-list-item-title>
+          </v-list-item>
+          <!-- custom -->
+          <v-list-item :to="{ name: 'Custom' }">
+            <v-list-item-icon>
+              <v-icon>fas fa-file-alt</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Custom</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>

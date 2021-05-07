@@ -911,6 +911,150 @@ const carousel = [
         date: '03-05-2021',
         src: 'lord_of_afflictions6.jpeg'
     },
+    {
+        id: '152',
+        linkId: '5',
+        date: '3-16-2021',
+        src: 'vorgaroth_the_scarred8.jpeg'
+    },
+    {
+        id: '153',
+        linkId: '5',
+        date: '3-16-2021',
+        src: 'vorgaroth_the_scarred9.jpeg'
+    },
+    {
+        id: '154',
+        linkId: '5',
+        date: '3-16-2021',
+        src: 'vorgaroth_the_scarred10.jpeg'
+    },
+    {
+        id: '155',
+        linkId: '18',
+        date: '3-16-2021',
+        src: 'rotigus7.jpeg'
+    },
+    {
+        id: '156',
+        linkId: '18',
+        date: '3-16-2021',
+        src: 'rotigus8.jpeg'
+    },
+    {
+        id: '157',
+        linkId: '17',
+        date: '3-16-2021',
+        src: 'slaughterbrute6.jpeg'
+    },
+    {
+        id: '158',
+        linkId: '12',
+        date: '3-16-2021',
+        src: 'exalted_greater_daemon_of_nurgle6.jpeg'
+    },
+    {
+        id: '159',
+        linkId: '12',
+        date: '3-16-2021',
+        src: 'exalted_greater_daemon_of_nurgle7.jpeg'
+    },
+    {
+        id: '160',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon1.jpeg'
+    },
+    {
+        id: '161',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon2.jpeg'
+    },
+    {
+        id: '162',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon3.jpeg'
+    },
+    {
+        id: '163',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon4.jpeg'
+    },
+    {
+        id: '164',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon5.jpeg'
+    },
+    {
+        id: '165',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon6.jpeg'
+    },
+    {
+        id: '166',
+        linkId: '33',
+        date: '3-16-2021',
+        src: 'archaon7.jpeg'
+    },
+    {
+        id: '167',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos13.jpeg'
+    },
+    {
+        id: '168',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos14.jpeg'
+    },
+    {
+        id: '169',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos15.jpeg'
+    },
+    {
+        id: '170',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos16.jpeg'
+    },
+    {
+        id: '171',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos17.jpeg'
+    },
+    {
+        id: '172',
+        linkId: '10',
+        date: '4-26-2021',
+        src: 'glutos18.jpeg'
+    },
+    {
+        id: '173',
+        linkId: '9',
+        date: '3-16-2021',
+        src: 'varanguard_slaanesh5.jpeg'
+    },
+    {
+        id: '174',
+        linkId: '9',
+        date: '3-16-2021',
+        src: 'varanguard_slaanesh6.jpeg'
+    },
+    {
+        id: '175',
+        linkId: '9',
+        date: '3-16-2021',
+        src: 'varanguard_slaanesh7.jpeg'
+    },
 ]
 
 export default carousel
