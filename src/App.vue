@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center flex-grow-1">
         <router-link class="mx-1" :to="{ name: 'Home' }">

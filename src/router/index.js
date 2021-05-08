@@ -39,10 +39,14 @@ const routes = [
     name: 'Custom',
     component: () => import('../views/Custom.vue'),
   },
+  {
+    path: '*',
+    redirect: '/home'
+  }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

@@ -5,7 +5,7 @@ const projects = [
         title: 'Chaos Lord on krakadrak',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'chaoslordkrakadrak1.jpeg'
+        src: 'chaoslordkrakadrak1.jpg'
     },
     {
         id: '2',
@@ -14,7 +14,7 @@ const projects = [
         title: 'Slaughter Priest',
         date: new Date('2021-02-15'),
         name: 'Gijs',
-        src: 'slaughterpriest1.jpeg'
+        src: 'slaughterpriest1.jpg'
     },
     {
         id: '3',
@@ -22,7 +22,7 @@ const projects = [
         title: 'Varanguard Nurgle',
         date: new Date('2021-02-14'),
         name: 'Gijs',
-        src: 'varanguard_nurgle1.jpeg'
+        src: 'varanguard_nurgle1.jpg'
     },
     {
         id: '4',
@@ -30,7 +30,7 @@ const projects = [
         title: 'Gaunt Summoner of Tzeentch',
         date: new Date('2021-03-13'),
         name: 'Gijs',
-        src: 'gaunt_summoner_of_tzeentch1.jpeg'
+        src: 'gaunt_summoner_of_tzeentch1.jpg'
     },
     {
         id: '5',
@@ -38,7 +38,7 @@ const projects = [
         title: 'Vorgaroth the Scarred',
         date: new Date('2021-03-15'),
         name: 'Gijs',
-        src: 'vorgaroth_the_scarred1.jpeg'
+        src: 'vorgaroth_the_scarred1.jpg'
     },
     {
         id: '6',
@@ -46,7 +46,7 @@ const projects = [
         title: 'Bloodsecrator',
         date: new Date('2021-03-16'),
         name: 'Gijs',
-        src: 'bloodsecrator1.jpeg'
+        src: 'bloodsecrator1.jpg'
     },
     {
         id: '7',
@@ -54,7 +54,7 @@ const projects = [
         title: 'Nurgling Champion',
         date: new Date('2021-03-16'),
         name: 'Gijs',
-        src: 'nurgling_champion1.jpeg'
+        src: 'nurgling_champion1.jpg'
     },
     {
         id: '8',
@@ -62,7 +62,7 @@ const projects = [
         title: 'Shalaxi Helbane',
         date: new Date('2021-03-16'),
         name: 'Gijs',
-        src: 'shalaxi_helbane1.jpeg'
+        src: 'shalaxi_helbane1.jpg'
     },
     {
         id: '9',
@@ -70,7 +70,7 @@ const projects = [
         title: 'Varanguard Slaanesh',
         date: new Date('2021-04-26'),
         name: 'Gijs',
-        src: 'varanguard_slaanesh1.jpeg'
+        src: 'varanguard_slaanesh1.jpg'
     },
     {
         id: '10',
@@ -78,7 +78,7 @@ const projects = [
         title: 'Glutos Orscollion, Lord of Gluttony',
         date: new Date('2021-04-26'),
         name: 'Gijs',
-        src: 'glutos1.jpeg'
+        src: 'glutos1.jpg'
     },
     {
         id: '11',
@@ -86,7 +86,7 @@ const projects = [
         title: 'Nurgling Drones',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'nurgling_drones1.jpeg'
+        src: 'nurgling_drones1.jpg'
     },
     {
         id: '12',
@@ -94,7 +94,7 @@ const projects = [
         title: 'Exalted Greater Daemon of Nurgle',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'exalted_greater_daemon_of_nurgle1.jpeg'
+        src: 'exalted_greater_daemon_of_nurgle1.jpg'
     },
     {
         id: '13',
@@ -102,7 +102,7 @@ const projects = [
         title: 'Great Unclean One',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'greater_daemon_of_nurgle1.jpeg'
+        src: 'greater_daemon_of_nurgle1.jpg'
     },
     {
         id: '14',
@@ -110,7 +110,7 @@ const projects = [
         title: 'Lord of Blights',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'lord_of_blights1.jpeg'
+        src: 'lord_of_blights1.jpg'
     },
     {
         id: '15',
@@ -118,7 +118,7 @@ const projects = [
         title: 'Lord of Plagues',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'lord_of_plagues1.jpeg'
+        src: 'lord_of_plagues1.jpg'
     },
     {
         id: '16',
@@ -126,7 +126,7 @@ const projects = [
         title: 'The Glottkin',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'glottkin1.jpeg'
+        src: 'glottkin1.jpg'
     },
     {
         id: '17',
@@ -134,7 +134,7 @@ const projects = [
         title: 'Slaughterbrute',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'slaughterbrute1.jpeg'
+        src: 'slaughterbrute1.jpg'
     },
     {
         id: '18',
@@ -142,7 +142,7 @@ const projects = [
         title: 'Rotigus',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'rotigus1.jpeg'
+        src: 'rotigus1.jpg'
     },
     {
         id: '19',
@@ -150,7 +150,7 @@ const projects = [
         title: 'Keeper of Secrets',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'keeper_of_secrets1.jpeg'
+        src: 'keeper_of_secrets1.jpg'
     },
     {
         id: '20',
@@ -158,7 +158,7 @@ const projects = [
         title: 'Putrid Blightskings',
         date: new Date('2021-04-27'),
         name: 'Gijs',
-        src: 'putrid_blightskings1.jpeg'
+        src: 'putrid_blightskings1.jpg'
     },
     {
         id: '21',
@@ -166,7 +166,7 @@ const projects = [
         title: 'Gotrek Gurnisson',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'gotrek1.jpeg'
+        src: 'gotrek1.jpg'
     },
     {
         id: '22',
@@ -174,7 +174,7 @@ const projects = [
         title: 'Black Guard',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'black_guard1.jpeg'
+        src: 'black_guard1.jpg'
     },
     {
         id: '23',
@@ -182,7 +182,7 @@ const projects = [
         title: 'Runelord',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'runelord1.jpeg'
+        src: 'runelord1.jpg'
     },
     {
         id: '24',
@@ -190,7 +190,7 @@ const projects = [
         title: 'Irondrakes',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'irondrakes1.jpeg'
+        src: 'irondrakes1.jpg'
     },
     {
         id: '25',
@@ -198,7 +198,7 @@ const projects = [
         title: 'Longbeards',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'longbeards1.jpeg'
+        src: 'longbeards1.jpg'
     },
     {
         id: '26',
@@ -206,7 +206,7 @@ const projects = [
         title: 'Skull Altar',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'skull_altar1.jpeg'
+        src: 'skull_altar1.jpg'
     },
     {
         id: '27',
@@ -214,7 +214,7 @@ const projects = [
         title: 'Chaos Sorcerer Lord',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'chaos_sorcerer_lord_nurgle1.jpeg'
+        src: 'chaos_sorcerer_lord_nurgle1.jpg'
     },
     {
         id: '28',
@@ -222,7 +222,7 @@ const projects = [
         title: 'Chaos Sorcerer Lord Tzeentch',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'chaos_sorcerer_lord_tzeentch1.jpeg'
+        src: 'chaos_sorcerer_lord_tzeentch1.jpg'
     },
     {
         id: '29',
@@ -230,7 +230,7 @@ const projects = [
         title: 'Exalted Hero of Chaos',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'exalted_hero_of_chaos1.jpeg'
+        src: 'exalted_hero_of_chaos1.jpg'
     },
     {
         id: '30',
@@ -238,7 +238,7 @@ const projects = [
         title: 'Festus the Leechlord',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'festus_the_leechlord1.jpeg'
+        src: 'festus_the_leechlord1.jpg'
     },
     {
         id: '31',
@@ -246,7 +246,7 @@ const projects = [
         title: 'Gutrot Spume',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'gutrot_spume1.jpeg'
+        src: 'gutrot_spume1.jpg'
     },
     {
         id: '32',
@@ -254,7 +254,7 @@ const projects = [
         title: 'Lord of Afflictions',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'lord_of_afflictions1.jpeg'
+        src: 'lord_of_afflictions1.jpg'
     },
     {
         id: '33',
@@ -262,7 +262,39 @@ const projects = [
         title: 'Archaon',
         date: new Date('2021-05-03'),
         name: 'Gijs',
-        src: 'archaon1.jpeg'
+        src: 'archaon1.jpg'
+    },
+    {
+        id: '34',
+        category: 'Blades of Khorne',
+        title: 'Lord of Khorne on Juggernaut',
+        date: new Date('2021-05-08'),
+        name: 'Gijs',
+        src: 'lord_of_khorne_on_juggernaut1.jpg'
+    },
+    {
+        id: '35',
+        category: 'Cities of Sigmar',
+        title: 'Hammerers',
+        date: new Date('2021-05-08'),
+        name: 'Gijs',
+        src: 'hammerers1.jpg'
+    },
+    {
+        id: '36',
+        category: 'Cities of Sigmar',
+        title: 'Ironbreakers',
+        date: new Date('2021-05-08'),
+        name: 'Gijs',
+        src: 'ironbreakers1.jpg'
+    },
+    {
+        id: '37',
+        category: 'hedonites of slaanesh',
+        title: 'Sigvald (old)',
+        date: new Date('2021-05-08'),
+        name: 'Gijs',
+        src: 'sigvald_old1.jpg'
     },
 ]
 

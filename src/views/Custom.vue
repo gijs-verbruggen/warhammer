@@ -3,14 +3,14 @@
     <v-container>
       <v-row>
         <v-spacer></v-spacer>
-        <v-col cols="8" sm="8" md="8" lg="8" xl="8">
+        <v-col cols="12" sm="12" md="12" lg="8" xl="8">
           <v-expansion-panels>
             <v-expansion-panel>
               <v-expansion-panel-header>
                 <h2>Triumph and Treachery Cards</h2>
               </v-expansion-panel-header>
               <v-expansion-panel-content>
-                <div class="d-flex">
+                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex d-block">
                   <p class="pr-1">
                     This is my custom Triumph and Treachery card set that I
                     created for FFA games. We sometimes play FFA games 1500
@@ -32,9 +32,9 @@
                     </v-card-actions>
                   </p>
                   <v-img
-                    alt="test"
+                    class="custom_image"
+                    alt="triumph and treachery cards"
                     src="../../src/assets/images/custom/triumph_and_treachery_cards.jpg"
-                    width="50%"
                   ></v-img>
                 </div>
               </v-expansion-panel-content>
@@ -51,7 +51,7 @@
 export default {
   name: "Custom",
   data: () => ({
-    url: "http://localhost:8080/",
+    url: process.env.BASE_URL,
   }),
   components: {},
 };
@@ -59,5 +59,13 @@ export default {
 <style>
 .expansion_panel_content_custom {
   width: 50%;
+}
+.custom_image {
+  width: 50%;
+}
+@media only screen and (max-width: 375px) {
+  .custom_image {
+    width: 100%;
+  }
 }
 </style>

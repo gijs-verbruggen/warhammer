@@ -5,7 +5,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const armies = [
         alliance: 'destruction',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const armies = [
         alliance: 'death',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 10,
@@ -77,7 +77,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 11,
@@ -85,7 +85,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 12,
@@ -94,7 +94,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 13,
@@ -102,7 +102,7 @@ const armies = [
         alliance: 'order',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 14,
@@ -111,7 +111,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 15,
@@ -119,7 +119,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 16,
@@ -128,7 +128,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 17,
@@ -136,7 +136,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 18,
@@ -145,7 +145,7 @@ const armies = [
         alliance: 'chaos',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 19,
@@ -153,7 +153,7 @@ const armies = [
         alliance: 'death',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 20,
@@ -162,7 +162,7 @@ const armies = [
         alliance: 'death',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 21,
@@ -170,16 +170,15 @@ const armies = [
         alliance: 'death',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 22,
-
         army: 'Gloomspite Gitz',
         alliance: 'destruction',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 23,
@@ -187,7 +186,7 @@ const armies = [
         alliance: 'destruction',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
     {
         id: 24,
@@ -195,7 +194,7 @@ const armies = [
         alliance: 'destruction',
         games: 0,
         wins: 0,
-        loses: 0,
+        losses: 0,
     },
 ]
 export default armies

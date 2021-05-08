@@ -12,17 +12,17 @@
         <v-col cols="12" sm="8" md="8" lg="8" xl="8">
           <div class="home_container white pa-2">
             <p class="text-lg-body-1">
-              Hi my name is Gijs and i'm the creator of this website. You might
+              Hi my name is Gijs and I'm the creator of this website. You might
               have guessed it from the URL were it says 'gijs'. I've been
               collecting warhammer since around 2013 right before the End Times.
               My collection consists of Slaves to Darkness, Maggotkin of Nurgle,
               Blades of Khorne, Disciples of Tzeentch, Hedonites of Slaanesh ,
               Skaven and Cities of Sigmar Dispossessed (old dwarfs). I also own
-              little bit of warhammer 40000 some Deathgaurd and Adeptus
+              a little bit of warhammer 40000 some Deathgaurd and Adeptus
               Custodes.
             </p>
             <p class="text-lg-body-1">
-              Check out the Gallery where i have posted alot of my models and
+              Check out the Gallery where I have posted alot of my models and
               some of my good friends models.
             </p>
             <p class="text-lg-body-1">
@@ -30,13 +30,13 @@
               for your own reading pleasure.
             </p>
             <p class="text-lg-body-1">
-              Go to the Armylist to find some armies you might like play or get
-              inspired by. Some of these armies are more for casual play with
-              your friends and some of these armies are more made for tournement
-              play.
+              Go to the Armylist to find some armies you might like to play or
+              get inspired by. Some of these armies are more for casual play
+              with your friends and some of these armies are more made for
+              tournement play.
             </p>
             <p class="text-lg-body-1">
-              On the leaderboards you can find some local statistics i've been
+              On the leaderboards you can find some local statistics I've been
               collecting in my region.
             </p>
           </div>
@@ -53,13 +53,13 @@
       </v-row>
       <v-row>
         <v-col cols="12" sm="12" md="4s" lg="4" xl="4">
-          <div class="home_container text-center white">test</div>
+          <div class="home_container text-center white"></div>
         </v-col>
         <v-col cols="12" sm="12" md="4s" lg="4" xl="4">
-          <div class="home_container text-center white">test</div>
+          <div class="home_container text-center white"></div>
         </v-col>
         <v-col cols="12" sm="12" md="4s" lg="4" xl="4">
-          <div class="home_container text-center white">test</div>
+          <div class="home_container text-center white"></div>
         </v-col>
       </v-row>
     </v-container>

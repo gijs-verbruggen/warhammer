@@ -70,7 +70,9 @@
           <v-card class="" @click="zoomOpen(project)" tile outlined>
             <v-hover v-slot="{ hover }">
               <v-img
-                :src="require(`../../src/assets/images/gallery/${project.src}`)"
+                :src="
+                  require(`../../src/assets/images/gallery/thumb/${project.src}`)
+                "
                 :alt="project.title"
                 aspect-ratio="1"
                 class="grey lighten-2"

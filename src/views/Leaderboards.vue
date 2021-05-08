@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12">
           <v-alert v-model="error" dismissible type="error">
-            You can't pick the same person in both the Winner and Loser
+            You can't pick the same person in both the Winner and Losser
             category.
           </v-alert>
           <div class="data_crud">
@@ -14,7 +14,7 @@
               class="d-inline-block mr-2"
               :hint="`${selectPlayer.player}`"
               :items="players"
-              label="Select a the player who Won"
+              label="Select a player who Won"
               item-text="player"
               item-value="id"
               dense
@@ -25,19 +25,19 @@
               class="d-inline-block mr-2"
               :hint="`${selectArmy.army}`"
               :items="armies"
-              label="Select a the army who Won"
+              label="Select a army who Won"
               item-text="army"
               item-value="id"
               dense
               required
             ></v-select>
-            Loser:
+            Losser:
             <v-select
               v-model="playerL"
               class="d-inline-block ml-2 mr-2"
               :hint="`${selectPlayer.player}`"
               :items="players"
-              label="Select a the player who Lost"
+              label="Select a player who Lost"
               item-text="player"
               item-value="id"
               dense
@@ -48,7 +48,7 @@
               class="d-inline-block mr-2"
               :hint="`${selectArmy.army}`"
               :items="armies"
-              label="Select a the army who Lost"
+              label="Select a army who Lost"
               item-text="army"
               item-value="id"
               dense
@@ -184,6 +184,7 @@
 <script>
 import dataPlayers from "../data/leaderboard/players.js";
 import dataArmies from "../data/leaderboard/armies.js";
+//import axios from "axios";
 
 export default {
   name: "Leaderboards",
@@ -198,7 +199,7 @@ export default {
       },
       { text: "Games", align: "end", value: "games", class: "header_text" },
       { text: "Wins", align: "end", value: "wins", class: "header_text" },
-      { text: "Loses", align: "end", value: "loses", class: "header_text" },
+      { text: "Loses", align: "end", value: "losses", class: "header_text" },
       {
         text: "Winrate (%)",
         align: "end",
@@ -210,7 +211,7 @@ export default {
       { text: "Army", align: "start", value: "army", class: "header_text" },
       { text: "Games", align: "end", value: "games", class: "header_text" },
       { text: "Wins", align: "end", value: "wins", class: "header_text" },
-      { text: "Loses", align: "end", value: "loses", class: "header_text" },
+      { text: "Loses", align: "end", value: "losses", class: "header_text" },
       {
         text: "Winrate (%)",
         align: "end",
@@ -246,6 +247,16 @@ export default {
       protein: 0,
     },
   }),
+  // created() {
+  //   axios
+  //     .get("../api/index.php")
+  //     .then(function (response) {
+  //       console.log(response);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // },
   methods: {
     calculatedResults(items) {
       return items.map((item) =>
@@ -273,11 +284,11 @@ export default {
           }
           if (this.players[i].id === playerL) {
             this.players[i].games++;
-            this.players[i].loses++;
+            this.players[i].losses++;
           }
           if (this.armies[i].id === armyL) {
             this.armies[i].games++;
-            this.armies[i].loses++;
+            this.armies[i].losses++;
           }
         }
       }
