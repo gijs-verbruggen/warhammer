@@ -1,4 +1,11 @@
-const games = [
+interface game {
+    id: number,
+    armyId1: number,
+    armyId2: number,
+    playerId1: number,
+    playerId2: number,
+}
+const games: game[] = [
     {
         id: 1,
         armyId1: 1,

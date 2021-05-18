@@ -1,4 +1,12 @@
-const armies = [
+interface army {
+    id: number,
+    army: string,
+    alliance: string,
+    games: number,
+    wins: number,
+    losses: number,
+}
+const armies: army[] = [
     {
         id: 1,
         army: 'Slaves to Darkness',

@@ -1,4 +1,12 @@
-const data = [
+interface battlereport {
+    id: number,
+    linkId: number,
+    date: string,
+    turn: string,
+    text: string,
+    src: string,
+}
+const battlereports: battlereport[] = [
     {
         id: 1,
         linkId: 1,
@@ -193,4 +201,4 @@ const data = [
     },
 ]
 
-export default data
+export default battlereports

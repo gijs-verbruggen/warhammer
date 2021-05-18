@@ -1,4 +1,11 @@
-const data = [
+interface battlereport {
+    id: number,
+    title: string,
+    date: string,
+    scenario: string,
+    src: string,
+}
+const battlereports = [
     {
         id: 1,
         title: 'FFA Slaves to Darkness vs Sylvaneth vs Kharadron Overlords',
@@ -29,4 +36,4 @@ const data = [
     },
 ]
 
-export default data
+export default battlereports

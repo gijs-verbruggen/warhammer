@@ -1,4 +1,13 @@
-const data = [
+interface armylist {
+    id: number,
+    army: string,
+    faction: string,
+    points: number,
+    pdf: string,
+    image: string,
+}
+
+const armylists : armylist[] = [
     {
         id: 1,
         army: 'Cities of Sigmar',
@@ -33,4 +42,4 @@ const data = [
     },
 ]
 
-export default data
+export default armylists
