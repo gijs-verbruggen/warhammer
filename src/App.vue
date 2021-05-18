@@ -16,7 +16,7 @@
         <router-link
           class="mx-1"
           :to="{ name: 'Home' }"
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <v-btn color="primary">
             <v-icon class="mr-1">fas fa-home </v-icon>
@@ -28,7 +28,7 @@
           open-on-hover
           bottom
           offset-y
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="primary" dark v-bind="attrs" v-on="on">
@@ -47,7 +47,7 @@
         <router-link
           class="mx-1"
           :to="{ name: 'Gallery' }"
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <v-btn color="primary">
             <v-icon class="mr-1"> fas fa-images </v-icon>
@@ -59,7 +59,7 @@
           open-on-hover
           bottom
           offset-y
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn color="primary" dark v-bind="attrs" v-on="on">
@@ -78,7 +78,7 @@
         <router-link
           class="mx-1"
           :to="{ name: 'Leaderboards' }"
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <v-btn color="primary">
             <v-icon class="mr-1"> fas fa-trophy </v-icon>
@@ -89,15 +89,26 @@
         <router-link
           class="mx-1"
           :to="{ name: 'Custom' }"
-          v-if="$vuetify.breakpoint.smAndUp"
+          v-if="$vuetify.breakpoint.lgAndUp"
         >
           <v-btn color="primary">
             <v-icon class="mr-1"> fas fa-file-alt </v-icon>
             Custom
           </v-btn>
         </router-link>
+        <!-- Programming -->
+        <router-link
+          class="mx-1"
+          :to="{ name: 'Programming' }"
+          v-if="$vuetify.breakpoint.lgAndUp"
+        >
+          <v-btn color="primary">
+            <v-icon class="mr-1"> fas fa-desktop </v-icon>
+            Programming
+          </v-btn>
+        </router-link>
         <v-spacer></v-spacer>
-        <v-btn v-if="$vuetify.breakpoint.smAndDown" icon @click="drawer = true">
+        <v-btn v-if="$vuetify.breakpoint.mdAndDown" icon @click="drawer = true">
           <v-icon>fas fa-bars</v-icon>
         </v-btn>
       </div>
@@ -108,7 +119,7 @@
       v-model="drawer"
       absolute
       temporary
-      v-if="$vuetify.breakpoint.smAndDown"
+      v-if="$vuetify.breakpoint.mdAndDown"
     >
       <v-list nav dense>
         <v-list-item-group active-class="text--accent-4">
@@ -174,6 +185,13 @@
             </v-list-item-icon>
             <v-list-item-title>Custom</v-list-item-title>
           </v-list-item>
+          <!-- programming -->
+          <v-list-item :to="{ name: 'Programming' }">
+            <v-list-item-icon>
+              <v-icon>fas fa-desktop</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Programming</v-list-item-title>
+          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -183,16 +201,7 @@
   </v-app>
 </template>
 
-<script>
-export default {
-  name: "App",
-
-  components: {},
-
-  data: () => ({
-    drawer: false,
-  }),
-};
+<script src="./app.ts">
 </script>
 
 <style>

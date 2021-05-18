@@ -16,25 +16,5 @@
   </v-container>
 </template>
 
-<script>
-import dataAos from "../../data/battlereport/aos/items.js";
-import IconLink from "../../components/IconLink.vue";
-
-export default {
-  name: "BattlereportsAos",
-
-  components: { IconLink },
-
-  data: () => ({
-    items: dataAos,
-    sortedItems: null,
-  }),
-  created() {
-    this.items.sort(function (first, last) {
-      var newest = new Date(first.date);
-      var oldest = new Date(last.date);
-      return oldest - newest;
-    });
-  },
-};
+<script src="./battlereportsAos.ts">
 </script>

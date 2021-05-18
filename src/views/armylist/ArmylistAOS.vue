@@ -36,14 +36,5 @@
   </div>
 </template>
 
-<script>
-import dataArmyList from "../../data/armylist/aos/data.js";
-export default {
-  name: "ArmyListAOS",
-  data: () => ({
-    url: process.env.BASE_URL,
-    lists: dataArmyList,
-  }),
-  components: {},
-};
+<script src="./armylistAOS">
 </script>

@@ -42,40 +42,7 @@
   </v-container>
 </template>
 
-<script>
-import Batrep from "../../data/battlereport/aos/data.js";
-
-export default {
-  name: "BattlereportsSelection",
-  created() {
-    var i = 0;
-    for (i = 0; i < this.batrep.length; i++) {
-      this.batrep[i].date =
-        this.batrep[i].date.toLocaleDateString("nl-NL", { year: "numeric" }) +
-        "-" +
-        this.batrep[i].date.toLocaleDateString("nl-NL", { month: "numeric" }) +
-        "-" +
-        this.batrep[i].date.toLocaleDateString("nl-NL", { day: "numeric" });
-    }
-  },
-  data() {
-    return {
-      batrep: Batrep,
-      date: this.$route.params.id,
-      newArray: null,
-    };
-  },
-  computed: {
-    filteredBatrep() {
-      let tempBatrep = this.batrep;
-
-      tempBatrep = tempBatrep.filter((item) => {
-        return item.date == this.date;
-      });
-      return tempBatrep;
-    },
-  },
-};
+<script src="./battlereportsSelection">
 </script>
 <style scoped>
 .carouselSlider {
