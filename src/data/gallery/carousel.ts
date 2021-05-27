@@ -1217,6 +1217,42 @@ const carousels : carousel[] = [
         date: '3-16-2021',
         src: 'lord_of_blights6.jpg'
     },
+    {
+        id: 202,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald1.jpg'
+    },
+    {
+        id: 203,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald2.jpg'
+    },
+    {
+        id: 204,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald3.jpg'
+    },
+    {
+        id: 205,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald4.jpg'
+    },
+    {
+        id: 206,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald5.jpg'
+    },
+    {
+        id: 207,
+        linkId: 38,
+        date: '5-23-2021',
+        src: 'sigvald6.jpg'
+    },
 ]
 
 export default carousels

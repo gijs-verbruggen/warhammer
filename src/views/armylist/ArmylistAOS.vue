@@ -19,12 +19,14 @@
             >
             </v-img>
             <v-card-title>
-              {{ list.army }} {{ list.points }} points
+              {{ list.name }}
             </v-card-title>
-            <v-card-subtitle>{{ list.faction }}</v-card-subtitle>
+            <v-card-subtitle>
+              {{ list.alliance }}<br />{{ list.subfaction }}
+            </v-card-subtitle>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn :href="url + list.pdf" color="primary" download>
+              <v-btn :href="url + list.pdf + '.pdf'" color="primary" download>
                 download List
                 <v-icon right dark> mdi-cloud-download </v-icon>
               </v-btn>

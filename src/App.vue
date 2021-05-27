@@ -195,8 +195,8 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <v-main class="grey lighten-1">
-      <router-view> </router-view>
+    <v-main class="grey lighten-1 background_image">
+      <router-view class="wrapper_main"> </router-view>
     </v-main>
   </v-app>
 </template>
@@ -207,5 +207,17 @@
 <style>
 .p-fixed {
   position: fixed !important;
+}
+.background_image {
+  background: url("./assets/AoS_ArchaonArmyvsOrruks2018.jpg") no-repeat center
+    top fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.wrapper_main {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 }
 </style>

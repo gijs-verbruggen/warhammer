@@ -14,7 +14,7 @@ const armylists : armylist[] = [
         faction: 'Greywater Fastness',
         points: 2000,
         pdf: 'cities_of_sigmar_greywater_fastness_2k.pdf',
-        image: 'cities_of_sigmar_2k.jpeg',
+        image: 'cities_of_sigmar_2k.jpg',
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const armylists : armylist[] = [
         faction: 'Host of the Everchosen',
         points: 2000,
         pdf: 'slaves_to_darkness_host_of_the_everchosen_2k.pdf',
-        image: 'slaves_to_darkness_2k.jpeg',
+        image: 'slaves_to_darkness_host_of_the_everchosen_2k.jpg',
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const armylists : armylist[] = [
         faction: 'Nurgle',
         points: 2000,
         pdf: 'maggotkin_of_nurgle_2k.pdf',
-        image: 'maggotkin_of_nurgle_2k.jpeg',
+        image: 'maggotkin_of_nurgle_2k.jpg',
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const armylists : armylist[] = [
         faction: 'The Drowned Men',
         points: 2000,
         pdf: 'maggotkin_of_nurgle_affliction_cyst_2k.pdf',
-        image: 'maggotkin_of_nurgle_2k.jpeg',
+        image: 'maggotkin_of_nurgle_affliction_cyst_2k.jpg',
     },
 ]
 

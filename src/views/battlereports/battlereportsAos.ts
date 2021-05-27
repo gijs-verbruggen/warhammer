@@ -16,7 +16,7 @@ export default class BattlereportsAos extends Vue {
         this.items.sort(function (first, last) {
             let newest:number = new Date(first.date).valueOf();
             let oldest:number = new Date(last.date).valueOf();
-            return newest - oldest;
+            return oldest - newest;
         });
     }
 }

@@ -341,6 +341,15 @@ const projects : project[] = [
         name: 'Gijs',
         src: 'sigvald_old1.jpg'
     },
+    {
+        id: 38,
+        linkId: 38,
+        category: 'hedonites of slaanesh',
+        title: 'Sigvald',
+        date: new Date('2021-05-08'),
+        name: 'Gijs',
+        src: 'sigvald1.jpg'
+    },
 ]
 
 export default projects
