@@ -18,7 +18,7 @@
               My collection consists of Slaves to Darkness, Maggotkin of Nurgle,
               Blades of Khorne, Disciples of Tzeentch, Hedonites of Slaanesh ,
               Skaven and Cities of Sigmar Dispossessed (old dwarfs). I also own
-              a little bit of warhammer 40000 some Deathgaurd and Adeptus
+              a little bit of warhammer 40000 some Deathguard and Adeptus
               Custodes.
             </p>
             <p>

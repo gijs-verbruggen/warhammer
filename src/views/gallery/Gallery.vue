@@ -13,13 +13,13 @@
               :key="category.id"
               class="mr-1 mb-1"
               :class="{
-                'indigo lighten-2': category.alliance === 'order',
-                'deep-orange lighten-1': category.alliance === 'chaos',
-                'light-blue lighten-2': category.alliance === 'death',
-                'green lighten-2': category.alliance === 'destruction',
+                'indigo lighten-2': category.grandalliance === 'Order',
+                'deep-orange lighten-1': category.grandalliance === 'Chaos',
+                'light-blue lighten-2': category.grandalliance === 'Death',
+                'green lighten-2': category.grandalliance === 'Destruction',
               }"
             >
-              {{ category.army }}
+              {{ category.alliance }}
             </v-btn>
           </div>
           <v-menu
@@ -52,7 +52,7 @@
                 :key="category.id"
                 @click="filter($event)"
               >
-                <v-list-item-title>{{ category.army }}</v-list-item-title>
+                <v-list-item-title>{{ category.alliance }}</v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>

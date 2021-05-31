@@ -39,6 +39,37 @@
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>
+                <h2>Music</h2>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex d-block">
+                  <p class="pr-1">
+                    During our matches i always put on some background music to
+                    prevent awkward silences or epic battle music. So yeh
+                    Nightwish, Iron Maiden, Evanescence, DragonForce, Breaking
+                    Benjamin, Linkin Park and some League of Legends. Here is my
+                    Warhammer playlist on Spotify.
+                    <v-card-actions class="pa-0 py-3">
+                      <iframe
+                        src="https://open.spotify.com/embed/playlist/2jY2KaYw1cY79MThnmdEoz"
+                        width="500"
+                        height="250"
+                        frameborder="0"
+                        allowtransparency="true"
+                        allow="encrypted-media"
+                      ></iframe>
+                    </v-card-actions>
+                  </p>
+                  <v-img
+                    class="custom_image"
+                    alt="music"
+                    src="../../../src/assets/images/custom/music_wallpaper.jpg"
+                  ></v-img>
+                </div>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
           </v-expansion-panels>
         </v-col>
         <v-spacer></v-spacer>

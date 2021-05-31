@@ -1,9 +1,15 @@
 import Vue from 'vue';
+import Axios from "axios";
 import Component from 'vue-class-component';
 import dataGallery from "../../data/gallery/data";
 import carouselGallery from "../../data/gallery/carousel";
-import dataArmies from "../../data/leaderboard/armies";
 import BackToTop from "../../components/backtotop/BackToTop.vue";
+
+interface category {
+  id: number;
+  alliance: string;
+  grandalliance: string;
+}
 
 @Component({
     components:{
@@ -14,7 +20,7 @@ export default class Gallery extends Vue {
 
   public projects = dataGallery;
   public carousel = carouselGallery;
-  public categories = dataArmies;
+  public categories: category[] = [];
   public event:any = null;
   public clicked = false;
   public dialog = false;
@@ -28,6 +34,12 @@ export default class Gallery extends Vue {
       let newest:number = new Date(first.date).valueOf();
       let oldest:number = new Date(last.date).valueOf();
       return newest - oldest;
+    });
+  }
+
+  public mounted() {
+    Axios.get("https://gijs-verbruggen.com/php/gallery_alliance.php").then((response) => {
+      this.categories = response.data;
     });
   }
 
