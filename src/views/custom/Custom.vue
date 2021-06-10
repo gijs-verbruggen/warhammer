@@ -70,6 +70,38 @@
                 </div>
               </v-expansion-panel-content>
             </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>
+                <h2>FFA scenario</h2>
+              </v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <div class="d-xl-flex d-lg-flex d-md-flex d-sm-flex d-block">
+                  <p class="pr-1">
+                    I created this scenario just for fun for are multiplayer
+                    games with some shenanigans to mess with each other. I also
+                    put some thought in to makeing it faster since games with
+                    alot of people take really long to even finish an single
+                    battleround.
+                    <v-card-actions class="pa-0 py-3">
+                      <v-spacer></v-spacer>
+                      <v-btn
+                        :href="url + 'Battleplan_birthday.pdf'"
+                        color="primary"
+                        download
+                        rounded
+                      >
+                        Download PDF
+                      </v-btn>
+                    </v-card-actions>
+                  </p>
+                  <v-img
+                    class="custom_image"
+                    alt="music"
+                    src="../../../src/assets/images/custom/battleplan_birthday.jpg"
+                  ></v-img>
+                </div>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
           </v-expansion-panels>
         </v-col>
         <v-spacer></v-spacer>

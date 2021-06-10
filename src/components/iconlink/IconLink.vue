@@ -8,7 +8,10 @@
     >
     </v-img>
     <v-card-title style="min-height: 96px">{{ itemLocal.title }}</v-card-title>
-    <v-card-subtitle>Scenario: {{ itemLocal.scenario }}</v-card-subtitle>
+    <v-card-subtitle>
+      Scenario: {{ itemLocal.scenario }}<br />
+      Date: {{ itemLocal.date }}
+    </v-card-subtitle>
     <v-card-actions>
       <v-btn color="orange" text v-on:click="goTo(itemLocal.date)">
         Go to Battlereport

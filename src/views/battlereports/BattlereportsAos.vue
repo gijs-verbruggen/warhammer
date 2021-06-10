@@ -3,10 +3,7 @@
     <v-container>
       <v-row>
         <v-col cols="12">
-          <h2 class="title_bar">
-            The battlereports are sorted by the most recent dates they were
-            played. At the top the most recent one.
-          </h2>
+          <h2 class="title_bar">Every week a new battlereport.</h2>
         </v-col>
         <v-col
           cols="12"

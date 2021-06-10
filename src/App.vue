@@ -108,11 +108,17 @@
           </v-btn>
         </router-link>
         <v-spacer></v-spacer>
+        <v-btn color="" @click="pickBackground">background</v-btn>
         <v-btn v-if="$vuetify.breakpoint.mdAndDown" icon @click="drawer = true">
           <v-icon>fas fa-bars</v-icon>
         </v-btn>
       </div>
     </v-app-bar>
+    <!--
+      ///////////////////////
+      MOBILE
+      ///////////////////////
+     -->
     <v-navigation-drawer
       class="p-fixed"
       height="100vh"
@@ -195,9 +201,76 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <v-main class="grey lighten-1 background_image">
+    <v-main id="app-v-main" class="grey lighten-1 background_image">
       <router-view class="wrapper_main"> </router-view>
     </v-main>
+    <v-dialog
+      v-model="dialogBackgroundOption"
+      max-width="1200"
+      max-height="1200"
+    >
+      <v-container class="app_dialog">
+        <v-radio-group label="Select an background image!" v-model="radioGroup">
+          <v-row>
+            <v-col cols="12" sm="12" md="6">
+              <v-radio
+                color="green"
+                on-icon="mdi-check-bold"
+                class="radio_background_order radioImage"
+                value="order"
+              ></v-radio>
+              <div class="text-center">
+                <h3>Order</h3>
+              </div>
+            </v-col>
+            <v-col cols="12" sm="12" md="6">
+              <v-radio
+                color="green"
+                on-icon="mdi-check-bold"
+                class="radio_background_chaos radioImage"
+                value="chaos"
+              ></v-radio>
+              <div class="text-center">
+                <h3>Chaos</h3>
+              </div>
+            </v-col>
+            <v-col cols="12" sm="12" md="6">
+              <v-radio
+                color="green"
+                on-icon="mdi-check-bold"
+                class="radio_background_death radioImage"
+                value="death"
+              ></v-radio>
+              <div class="text-center">
+                <h3>Death</h3>
+              </div>
+            </v-col>
+            <v-col cols="12" sm="12" md="6">
+              <v-radio
+                color="green"
+                on-icon="mdi-check-bold"
+                class="radio_background_destruction radioImage"
+                value="destruction"
+              ></v-radio>
+              <div class="text-center">
+                <h3>Destruction</h3>
+              </div>
+            </v-col>
+          </v-row>
+        </v-radio-group>
+        <div class="d-flex">
+          <v-spacer></v-spacer>
+          <v-btn @click="cancelBackground">
+            Cancel
+            <v-icon>mdi-cancel</v-icon>
+          </v-btn>
+          <v-btn color="green" @click="saveBackground(radioGroup)">
+            Save
+            <v-icon>mdi-content-save</v-icon>
+          </v-btn>
+        </div>
+      </v-container>
+    </v-dialog>
   </v-app>
 </template>
 
@@ -205,13 +278,13 @@
 </script>
 
 <style>
+.app_dialog {
+  background-color: rgba(255, 255, 255, 1);
+}
 .p-fixed {
   position: fixed !important;
 }
 .background_image {
-  background: url("./assets/AoS_ArchaonArmyvsOrruks2018.jpg") no-repeat center
-    top fixed;
-  background-size: cover;
   height: 100%;
   overflow: hidden;
 }
@@ -219,5 +292,55 @@
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
+}
+.radioImage {
+  position: relative;
+  width: 100%;
+  height: 95% !important;
+  min-height: 360px;
+  background-size: cover !important;
+}
+/* overwrite */
+.radio_background_order .v-input--selection-controls__input,
+.radio_background_chaos .v-input--selection-controls__input,
+.radio_background_death .v-input--selection-controls__input,
+.radio_background_destruction .v-input--selection-controls__input {
+  position: absolute !important;
+  right: 0;
+  top: 14px;
+}
+/* background options */
+.background_a {
+  background: url("./assets/background_chaos.jpg") no-repeat top fixed;
+  background-size: cover;
+}
+.background_order {
+  background: url("./assets/background_order.jpg") no-repeat top fixed;
+  background-size: cover;
+}
+.background_chaos {
+  background: url("./assets/background_chaos.jpg") no-repeat top fixed;
+  background-size: cover;
+}
+.background_death {
+  background: url("./assets/background_death.jpg") no-repeat top fixed;
+  background-size: cover;
+}
+.background_destruction {
+  background: url("./assets/background_destruction.jpg") no-repeat top fixed;
+  background-size: cover;
+}
+/* background input options */
+.radio_background_order {
+  background: url("./assets/background_order.jpg") no-repeat center;
+}
+.radio_background_chaos {
+  background: url("./assets/background_chaos.jpg") no-repeat center;
+}
+.radio_background_death {
+  background: url("./assets/background_death.jpg") no-repeat center;
+}
+.radio_background_destruction {
+  background: url("./assets/background_destruction.jpg") no-repeat center;
 }
 </style>
