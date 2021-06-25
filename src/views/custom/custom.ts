@@ -3,5 +3,6 @@ import Component from 'vue-class-component';
 
 @Component
 export default class Custom extends Vue {
-    public url = process.env.BASE_URL;
+    public url: string = 'https://gijs-verbruggen.com/pdf/';
+    public panel: number = 0;
 }

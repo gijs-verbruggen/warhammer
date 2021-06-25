@@ -9,7 +9,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" sm="12" md="8" lg="8" xl="8">
+        <v-col cols="12" sm="12" md="6" lg="6" xl="6">
           <div class="background_container pa-2">
             <p>
               Hi my name is Gijs and I'm the creator of this website. You might
@@ -26,10 +26,6 @@
               some of my good friends models.
             </p>
             <p>
-              Check out the Battlereport where you can find many battlereports
-              for your own reading pleasure.
-            </p>
-            <p>
               Go to the Armylist to find some armies you might like to play or
               get inspired by. Some of these armies are more for casual play
               with your friends and some of these armies are more made for
@@ -41,13 +37,46 @@
             </p>
           </div>
         </v-col>
-        <v-col cols="12" sm="12" md="4" lg="4" xl="4">
-          <div class="background_container pa-2">
+        <v-spacer></v-spacer>
+        <v-col cols="12" sm="12" md="6" lg="4" xl="3">
+          <h2 class="background_container mb-2">
+            Check the lastest battlereport here!
+          </h2>
+          <v-card>
             <v-img
-              alt="everchosen image"
-              src="../../assets/images/icon/everchosen_icon.png"
+              :src="reportImageSrc"
+              :alt="newestBattlereport.gameType"
+              height="250px"
             ></v-img>
-          </div>
+            <v-card-title>
+              {{ newestBattlereport.gameType }}
+            </v-card-title>
+            <v-card-subtitle>
+              Scenario: {{ newestBattlereport.scenario }}
+            </v-card-subtitle>
+            <v-card-actions>
+              <v-btn
+                color="primary "
+                :to="'battlereports/aos/' + newestBattlereport.date"
+              >
+                Explore here
+              </v-btn>
+              <v-spacer></v-spacer>
+              <v-btn icon @click="show = !show">
+                <v-icon>
+                  {{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}
+                </v-icon>
+              </v-btn>
+            </v-card-actions>
+            <v-expand-transition>
+              <div v-show="show">
+                <v-divider></v-divider>
+                <v-card-text>
+                  {{ newestBattlereport.armies }}
+                </v-card-text>
+              </div>
+            </v-expand-transition>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>

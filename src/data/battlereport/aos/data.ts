@@ -303,6 +303,38 @@ const battlereports: battlereport[] = [
         text: `The ritual now completed by the Chaos worshippers forced the Gargants to retreat as they couldn't fight on all fronts and many the many chaos champions still remaning to fight them.`,
         src: 'img-3.jpg',
     },
+    {
+        id: 38,
+        linkId: 8,
+        date: new Date('2021-06-11').toLocaleDateString("en-CA"),
+        turn: 'Deployment:',
+        text: ``,
+        src: 'img-1.jpg',
+    },
+    {
+        id: 39,
+        linkId: 8,
+        date: new Date('2021-06-11').toLocaleDateString("en-CA"),
+        turn: 'Round 1:',
+        text: `Most of the armies all moved up closer to the White-dwarf. Ofcourse the Kharadron had to shoot to Slaves to Darkness before they were done.`,
+        src: 'img-2.jpg',
+    },
+    {
+        id: 40,
+        linkId: 8,
+        date: new Date('2021-06-11').toLocaleDateString("en-CA"),
+        turn: 'Round 2:',
+        text: `The Slaves to Darkness moved to face the Kharadron because they were done with there cowardly missle fire. Sadly not all charges were made it to the Kharadron line. The Sons of behemat moved to the White-dwarf so they received the White-dwarfs gift. The Soulblight Gravelords were hesitent to face such massive Gargants and so decided it wasn't worth the risk to face them now. After some lucky missfortune for the Slaves to Darkness the Kharadron decided to fly away so they didn't have to face such a threat so for some reason they decided to go behind the Sons of Behemat. Which they prompted to shoot in the back this ofcourse pissed to Gargants of by not even the slighest so will see what comes of this.`,
+        src: 'img-3.jpg',
+    },
+    {
+        id: 41,
+        linkId: 8,
+        date: new Date('2021-06-11').toLocaleDateString("en-CA"),
+        turn: 'Round 3:',
+        text: `So yeh after that the Gargants weren't in the best of moods so they went after Kharadron and showed their crushing strength on the fragile boats. The Slaves to Darkness then moved in the get the White-dwarfs attention. Meanwhile the Kharadron in full panic mode scarmbeld to escape dissaster and left some of there troops to fend for them selves. And yes I forgot to take the last photo but the Kharadron were able to get the White-dwarfs attention at the end and there for succeded in the mission.`,
+        src: 'img-4.jpg',
+    },
 ]
 
 export default battlereports

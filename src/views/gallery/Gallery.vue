@@ -71,9 +71,9 @@
             <v-hover v-slot="{ hover }">
               <v-img
                 :src="
-                  require(`../../../src/assets/images/gallery/${project.src}`)
+                  require(`../../../src/assets/images/gallery/${project.image}`)
                 "
-                :alt="project.title"
+                :alt="project.name"
                 aspect-ratio="1"
                 class="grey lighten-2"
               >
@@ -91,13 +91,19 @@
                 </template>
                 <v-expand-transition>
                   <div
-                    class="d-flex transition-fast-in-fast-out v-card--reveal white--text gallery_photos_card_hover_content"
+                    class="
+                      d-flex
+                      transition-fast-in-fast-out
+                      v-card--reveal
+                      white--text
+                      gallery_photos_card_hover_content
+                    "
                     style="height: 25%"
                     width="100%"
                     bottom
                     v-if="hover"
                   >
-                    <h5>{{ project.title }}</h5>
+                    <h5>{{ project.name }}</h5>
                   </div>
                 </v-expand-transition>
               </v-img>

@@ -1,14 +1,25 @@
 import Vue from 'vue';
 import Axios from "axios";
 import Component from 'vue-class-component';
-import dataGallery from "../../data/gallery/data";
-import carouselGallery from "../../data/gallery/carousel";
 import BackToTop from "../../components/backtotop/BackToTop.vue";
 
 interface category {
   id: number;
   alliance: string;
   grandalliance: string;
+}
+interface project {
+  id: number;
+  name: string;
+  image: string;
+  date: string;
+  painter_name: string;
+  alliance_name: string;
+}
+interface carousel {
+  id: number;
+  gallery_id: number;
+  image: string;
 }
 
 @Component({
@@ -18,16 +29,16 @@ interface category {
 })
 export default class Gallery extends Vue {
 
-  public projects = dataGallery;
-  public carousel = carouselGallery;
+  public projects: project[] = [];
+  public carousels: carousel[] = [];
   public categories: category[] = [];
   public event:any = null;
-  public clicked = false;
-  public dialog = false;
-  public selectedId = null;
+  public clicked:boolean = false;
+  public dialog:boolean = false;
+  public selectedId:number|null = null;
   public selectedCarousel:string[] = [];
-  public selectedModel = 0;
-  public hover = false;
+  public selectedModel:number = 0;
+  public hover:boolean = false;
 
   created() {
     this.projects.sort(function (first, last) {
@@ -41,11 +52,17 @@ export default class Gallery extends Vue {
     Axios.get("https://gijs-verbruggen.com/php/gallery_alliance.php").then((response) => {
       this.categories = response.data;
     });
+    Axios.get("https://gijs-verbruggen.com/php/gallery.php").then((response) => {
+      this.projects = response.data;
+    });
+    Axios.get("https://gijs-verbruggen.com/php/galleryitem.php").then((response) => {
+      this.carousels = response.data;
+    });
   }
 
   public get filteredProjects() {
     if (this.event != null && this.event.target.innerText.toLowerCase() != "all") {
-      return this.projects.filter(({ category }) => category.toLowerCase() == this.event.target.innerText.toLowerCase());
+      return this.projects.filter(({ alliance_name }) => alliance_name.toLowerCase() == this.event.target.innerText.toLowerCase());
     } else {
       return this.projects;
     }
@@ -62,10 +79,10 @@ export default class Gallery extends Vue {
     this.$gtag.event("gallery-model", {
       value: this.selectedId,
     });
-    for (i = 0; i < this.carousel.length; i++) {
-      if (this.carousel[i].linkId === this.selectedId) {
+    for (i = 0; i < this.carousels.length; i++) {
+      if (this.carousels[i].gallery_id === this.selectedId) {
         this.selectedCarousel.push(
-          require("../../../src/assets/images/gallery/" + this.carousel[i].src)
+          require("../../../src/assets/images/gallery/" + this.carousels[i].image)
         );
       }
     }

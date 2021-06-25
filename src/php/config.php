@@ -1,5 +1,5 @@
 <?php
-
+Route::get('/{catchall?}', 'AppController@show')->where('catchall', '^(?!api).*$')->name('administration');
 function makeAttrSafe($strText)
 {
 	return str_replace("\"", "&quot;", $strText);

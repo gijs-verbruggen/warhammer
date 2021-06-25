@@ -4,7 +4,7 @@
       <v-row>
         <v-spacer></v-spacer>
         <v-col cols="12" sm="12" md="12" lg="8" xl="8">
-          <v-expansion-panels>
+          <v-expansion-panels v-model="panel">
             <v-expansion-panel>
               <v-expansion-panel-header>
                 <h2>Triumph and Treachery Cards</h2>

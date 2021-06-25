@@ -21,18 +21,11 @@ export default class App extends Vue {
         this.backgroundOption = localStorage.getItem('backgroundImage') || 'chaos';
     }
     @Watch('backgroundOption') onPropertyChanged(value: string, oldValue: string) {
-        if( document.getElementById('app-v-main')?.classList.contains('background_order') ||
-            document.getElementById('app-v-main')?.classList.contains('background_chaos') ||
-            document.getElementById('app-v-main')?.classList.contains('background_death') ||
-            document.getElementById('app-v-main')?.classList.contains('background_destruction')
-            ){
-            document.getElementById('app-v-main')?.classList.remove('background_order')
-            document.getElementById('app-v-main')?.classList.remove('background_chaos')
-            document.getElementById('app-v-main')?.classList.remove('background_death')
-            document.getElementById('app-v-main')?.classList.remove('background_destruction')
+        let mainElement: HTMLElement|null = document.getElementById('app-v-main');
+        if(mainElement) {
+            mainElement.classList.remove('background_order', 'background_chaos', 'background_death', 'background_destruction');
+            mainElement.classList.add('background_'+value);
         }
-        document.getElementById('app-v-main')?.classList.add('background_'+value);
-        document.getElementById('app-v-main')?.classList.remove('background_'+oldValue);
         this.dialogBackgroundOption = false;
     }
     public mounted() {

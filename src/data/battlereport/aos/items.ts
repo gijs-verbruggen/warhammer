@@ -12,6 +12,8 @@ const battlereports = [
         date: new Date('2020-10-09').toLocaleDateString("en-CA"),
         scenario: 'King of the Hill',
         src: '2020-10-09/deployment.jpg',
+        gameType: 'FFA 3 players',
+        armies: 'Slaves to Darkness, Sylvaneth and Kharadron Overlords'
     },
     {
         id: 2,
@@ -19,6 +21,8 @@ const battlereports = [
         date: new Date('2020-09-25').toLocaleDateString("en-CA"),
         scenario: 'Focal Points',
         src: '2020-09-25/EOT_1.jpg',
+        gameType: '2v2 4 players',
+        armies: 'Slaves to Darkness, Sylvaneth, Kharadron Overlords and Gloomspite Gitz'
     },
     {
         id: 3,
@@ -26,6 +30,8 @@ const battlereports = [
         date: new Date('2021-04-30').toLocaleDateString("en-CA"),
         scenario: 'Forcing the Hand',
         src: '2021-04-30/img-1.jpg',
+        gameType: '1v2 3 players',
+        armies: 'Cities of Sigmar, Kharadron Overlords and Nighthaunt'
     },
     {
         id: 4,
@@ -33,6 +39,9 @@ const battlereports = [
         date: new Date('2021-05-01').toLocaleDateString("en-CA"),
         scenario: 'Shifting Objectives',
         src: '2021-05-01/img-1.jpg',
+        gameType: '1v1 2 players',
+        armies: 'Maggotkin of Nurgle and Sons of Behemat'
+
     },
     {
         id: 5,
@@ -40,6 +49,8 @@ const battlereports = [
         date: new Date('2021-05-28').toLocaleDateString("en-CA"),
         scenario: 'Starstrike',
         src: '2021-05-28/img-1.jpg',
+        gameType: '1v2 3 players',
+        armies: 'Hedonites of Slaanesh, Kharadron Overlords and Nighthaunt'
     },
     {
         id: 6,
@@ -47,6 +58,8 @@ const battlereports = [
         date: new Date('2021-05-21').toLocaleDateString("en-CA"),
         scenario: 'Forcing the Hand',
         src: '2021-05-21/img-1.jpg',
+        gameType: '1v1',
+        armies: 'Slaves to Darkness and Sons of Behemat'
     },
     {
         id: 7,
@@ -54,6 +67,17 @@ const battlereports = [
         date: new Date('2021-05-22').toLocaleDateString("en-CA"),
         scenario: 'Total Commitment',
         src: '2021-05-22/img-1.jpg',
+        gameType: '1v1',
+        armies: 'Slaves to Darkness, Sons of Behemat'
+    },
+    {
+        id: 8,
+        title: 'FFA Slaves to Darkness, Soulblight Gravelords, Sons of Behemat and Kharadron Overlords',
+        date: new Date('2021-06-11').toLocaleDateString("en-CA"),
+        scenario: 'White Dwarf Birthday',
+        src: '2021-06-11/img-1.jpg',
+        gameType: 'FFA 4 players',
+        armies: 'Slaves to Darkness, Soulblight Gravelords, Sons of Behemat and Kharadron Overlords'
     },
 ]
 

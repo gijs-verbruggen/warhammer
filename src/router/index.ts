@@ -45,15 +45,16 @@ const routes = [
     component: () => import('../views/programming/Programming.vue'),
   },
   {
-    path: '*',
-    redirect: '/home'
+    path: '/:catchAll(.*)',
+    component: () => import('../views/home/Home.vue'),
+    name: 'Home'
   }
 ]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes: routes,
 })
 
 export default router

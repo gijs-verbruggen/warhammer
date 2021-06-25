@@ -97,7 +97,7 @@
           </v-btn>
         </router-link>
         <!-- Programming -->
-        <router-link
+        <!-- <router-link
           class="mx-1"
           :to="{ name: 'Programming' }"
           v-if="$vuetify.breakpoint.lgAndUp"
@@ -106,7 +106,7 @@
             <v-icon class="mr-1"> fas fa-desktop </v-icon>
             Programming
           </v-btn>
-        </router-link>
+        </router-link> -->
         <v-spacer></v-spacer>
         <v-btn color="" @click="pickBackground">background</v-btn>
         <v-btn v-if="$vuetify.breakpoint.mdAndDown" icon @click="drawer = true">
@@ -192,12 +192,12 @@
             <v-list-item-title>Custom</v-list-item-title>
           </v-list-item>
           <!-- programming -->
-          <v-list-item :to="{ name: 'Programming' }">
+          <!-- <v-list-item :to="{ name: 'Programming' }">
             <v-list-item-icon>
               <v-icon>fas fa-desktop</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Programming</v-list-item-title>
-          </v-list-item>
+          </v-list-item> -->
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -207,7 +207,7 @@
     <v-dialog
       v-model="dialogBackgroundOption"
       max-width="1200"
-      max-height="1200"
+      max-height="1000"
     >
       <v-container class="app_dialog">
         <v-radio-group label="Select an background image!" v-model="radioGroup">
@@ -297,8 +297,17 @@
   position: relative;
   width: 100%;
   height: 95% !important;
-  min-height: 360px;
+  min-height: 350px;
   background-size: cover !important;
+}
+@media screen and (max-width: 1920px) {
+  .radioImage {
+    position: relative;
+    width: 100%;
+    height: 95% !important;
+    min-height: 270px;
+    background-size: cover !important;
+  }
 }
 /* overwrite */
 .radio_background_order .v-input--selection-controls__input,
