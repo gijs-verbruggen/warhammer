@@ -42,8 +42,8 @@
                 >
                   AOS Edition:
                   <v-radio label="All" value="0"></v-radio>
-                  <v-radio label="2" value="2"></v-radio>
-                  <v-radio label="3" value="3"></v-radio>
+                  <v-radio label="2" value="Corebook 2"></v-radio>
+                  <v-radio label="3" value="Corebook 3"></v-radio>
                 </v-radio-group>
               </v-col>
               <v-spacer></v-spacer>
@@ -53,7 +53,7 @@
                   :items="selectHandbookItems"
                   item-text="name"
                   item-value="handbook"
-                  label="General's Handbook"
+                  label=""
                 >
                 </v-select>
               </v-col>
@@ -100,9 +100,9 @@
               </p>
               <p class="mb-0">
                 {{ list.subfaction }}
-                <span class="float-right"
-                  >General's handbook: {{ list.handbook }}</span
-                >
+                <span class="float-right">
+                  General's handbook: {{ list.handbook }}
+                </span>
               </p>
             </v-card-text>
             <v-card-actions>

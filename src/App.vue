@@ -12,17 +12,20 @@
             width="40"
           />
         </router-link>
+
         <!-- Home -->
-        <router-link
-          class="mx-1"
-          :to="{ name: 'Home' }"
-          v-if="$vuetify.breakpoint.lgAndUp"
-        >
-          <v-btn color="primary">
-            <v-icon class="mr-1">fas fa-home </v-icon>
-            Home
-          </v-btn>
-        </router-link>
+        <div>
+          <router-link
+            class="mx-1"
+            :to="{ name: 'Home' }"
+            v-if="$vuetify.breakpoint.lgAndUp"
+          >
+            <v-btn color="primary">
+              <v-icon class="mr-1">fas fa-home </v-icon>
+              Home
+            </v-btn>
+          </router-link>
+        </div>
         <!-- Battlereport -->
         <v-menu
           open-on-hover
@@ -37,7 +40,7 @@
               <v-icon small class="mr-1"> fas fa-caret-down </v-icon>
             </v-btn>
           </template>
-          <v-list>
+          <v-list color="primary" dark>
             <v-list-item :to="{ name: 'BattlereportsAos' }">
               <v-list-item-title>AOS</v-list-item-title>
             </v-list-item>
@@ -68,7 +71,7 @@
               <v-icon small class="mr-1"> fas fa-caret-down </v-icon>
             </v-btn>
           </template>
-          <v-list>
+          <v-list color="primary" dark>
             <v-list-item :to="{ name: 'ArmylistAos' }">
               <v-list-item-title>AOS</v-list-item-title>
             </v-list-item>
@@ -96,17 +99,6 @@
             Custom
           </v-btn>
         </router-link>
-        <!-- Programming -->
-        <!-- <router-link
-          class="mx-1"
-          :to="{ name: 'Programming' }"
-          v-if="$vuetify.breakpoint.lgAndUp"
-        >
-          <v-btn color="primary">
-            <v-icon class="mr-1"> fas fa-desktop </v-icon>
-            Programming
-          </v-btn>
-        </router-link> -->
         <v-spacer></v-spacer>
         <v-btn color="" @click="pickBackground">background</v-btn>
         <v-btn v-if="$vuetify.breakpoint.mdAndDown" icon @click="drawer = true">
@@ -191,13 +183,6 @@
             </v-list-item-icon>
             <v-list-item-title>Custom</v-list-item-title>
           </v-list-item>
-          <!-- programming -->
-          <!-- <v-list-item :to="{ name: 'Programming' }">
-            <v-list-item-icon>
-              <v-icon>fas fa-desktop</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Programming</v-list-item-title>
-          </v-list-item> -->
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>

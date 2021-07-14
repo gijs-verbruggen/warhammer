@@ -79,6 +79,33 @@ const battlereports = [
         gameType: 'FFA 4 players',
         armies: 'Slaves to Darkness, Soulblight Gravelords, Sons of Behemat and Kharadron Overlords'
     },
+    {
+        id: 9,
+        title: 'FFA Maggotkin of Nurgle, Soulblight Gravelords, Sons of Behemat and Kharadron Overlords',
+        date: new Date('2021-06-26').toLocaleDateString("en-CA"),
+        scenario: 'White Dwarf Birthday',
+        src: '2021-06-26/img-1.jpg',
+        gameType: 'FFA 4 players',
+        armies: 'Maggotkin of Nurgle, Soulblight Gravelords, Sons of Behemat and Kharadron Overlords'
+    },
+    {
+        id: 10,
+        title: 'FFA Maggotkin of Nurgle, Soulblight Gravelords and Kharadron Overlords',
+        date: new Date('2021-07-10').toLocaleDateString("en-CA"),
+        scenario: 'White Dwarf Birthday',
+        src: '2021-07-10/img-1.jpg',
+        gameType: 'FFA 3 players',
+        armies: 'Maggotkin of Nurgle, Soulblight Gravelords, Kharadron Overlords'
+    },
+    {
+        id: 11,
+        title: '1v1 Slaves to Darkness vs Sons of Behemat',
+        date: new Date('2021-07-11').toLocaleDateString("en-CA"),
+        scenario: 'Power in Numbers',
+        src: '2021-07-11/img-9.jpg',
+        gameType: '1v1',
+        armies: 'Sons of Behemat, Slaves to Darkness'
+    },
 ]
 
 export default battlereports

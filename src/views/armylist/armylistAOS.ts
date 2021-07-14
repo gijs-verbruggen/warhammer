@@ -41,7 +41,7 @@ export default class AmrylistAOS extends Vue {
     public radioGroupPoints: number = 0;
     public radioGroupVersion: number = 0;
     public selectHandbook: number = 0;
-    public selectHandbookItems: handbook[] = [{id: 0, name: 'All', handbook: 0}, {id: 1, name: '2020', handbook: 2020}, {id: 2, name: '2021', handbook: 2021}];
+    public selectHandbookItems: handbook[] = [{id: 0, name: 'All', handbook: 0}, {id: 1, name: `Generals's handbook 2020`, handbook: 2020}, {id: 2, name: `Generals's handbook 2021`, handbook: 2021}];
     private _timerId = 0;
 
 

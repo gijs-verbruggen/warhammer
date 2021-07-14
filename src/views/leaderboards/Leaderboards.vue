@@ -111,7 +111,7 @@
             </v-list-item>
             <v-card-actions>
               <v-btn
-                :href="'https://gijs-verbruggen.com/' + item.pdf + '.pdf'"
+                :href="'https://gijs-verbruggen.com/pdf/' + item.pdf + '.pdf'"
                 color="primary"
                 rounded
                 download
