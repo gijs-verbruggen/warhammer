@@ -49,13 +49,13 @@ export default class Gallery extends Vue {
   }
 
   public mounted() {
-    Axios.get("https://gijs-verbruggen.com/php/gallery_alliance.php").then((response) => {
+    Axios.get("/php/gallery_alliance.php").then((response) => {
       this.categories = response.data;
     });
-    Axios.get("https://gijs-verbruggen.com/php/gallery.php").then((response) => {
+    Axios.get("/php/gallery.php").then((response) => {
       this.projects = response.data;
     });
-    Axios.get("https://gijs-verbruggen.com/php/galleryitem.php").then((response) => {
+    Axios.get("/php/galleryitem.php").then((response) => {
       this.carousels = response.data;
     });
   }

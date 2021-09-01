@@ -50,14 +50,14 @@ export default class Leaderboards extends Vue {
   public leaderboardPlayerList: {name:string, subfaction: string, pdf:string, wins: number, losses: number, img: string}[]=[];
 
   public mounted() {
-    Axios.get("https://gijs-verbruggen.com/php/leaderboard_alliance.php").then((response) => {
+    Axios.get("/php/leaderboard_alliance.php").then((response) => {
       for (var i = 0; i < response.data.length; i++) {
         response.data[i].winrate =
         (response.data[i].wins / response.data[i].games || 0) * 100 + "%";
         this.leaderboardAlliance.push(response.data[i]);
       }
     });
-    Axios.get("https://gijs-verbruggen.com/php/leaderboard_player.php").then((response) => {
+    Axios.get("/php/leaderboard_player.php").then((response) => {
       for (var i = 0; i < response.data.length; i++) {
         response.data[i].winrate =
         (response.data[i].wins / response.data[i].games || 0) * 100 + "%";
@@ -68,7 +68,7 @@ export default class Leaderboards extends Vue {
 
   public SelectedPlayerData() {
     let currentId = this.selected.id
-    Axios.get("https://gijs-verbruggen.com/php/leaderboard_player_lists.php", {
+    Axios.get("/php/leaderboard_player_lists.php", {
       params: {
         selectedId: currentId
       }

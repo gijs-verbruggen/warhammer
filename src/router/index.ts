@@ -40,9 +40,9 @@ const routes = [
     component: () => import('../views/custom/Custom.vue'),
   },
   {
-    path: '/programming',
-    name: 'Programming',
-    component: () => import('../views/programming/Programming.vue'),
+    path: '/builder',
+    name: 'Builder',
+    component: () => import('../views/builder/Builder.vue'),
   },
   {
     path: '/:catchAll(.*)',

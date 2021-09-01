@@ -46,10 +46,10 @@ export default class AmrylistAOS extends Vue {
 
 
     public mounted() {
-        Axios.get("https://gijs-verbruggen.com/php/gallery_alliance.php").then((response) => {
+        Axios.get("/php/gallery_alliance.php").then((response) => {
             this.alliances = [...this.alliances, ...response.data];
         })
-        Axios.get("https://gijs-verbruggen.com/php/armylist_list.php").then((response) => {
+        Axios.get("/php/armylist_list.php").then((response) => {
             this.lists = response.data;
             for(var _i = 0; _i < this.lists.length; _i++) {
                 if(this.lists[_i].image === ''){

@@ -88,6 +88,17 @@
             Leaderboards
           </v-btn>
         </router-link>
+        <!-- Builder -->
+        <router-link
+          class="mx-1"
+          :to="{ name: 'Builder' }"
+          v-if="$vuetify.breakpoint.lgAndUp"
+        >
+          <v-btn color="primary">
+            <v-icon class="mr-1"> fas fa-pen-alt </v-icon>
+            Builder
+          </v-btn>
+        </router-link>
         <!-- Custom -->
         <router-link
           class="mx-1"
@@ -175,6 +186,13 @@
               <v-icon>fas fa-trophy</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Leaderboards</v-list-item-title>
+          </v-list-item>
+          <!-- builder -->
+          <v-list-item :to="{ name: 'Builder' }">
+            <v-list-item-icon>
+              <v-icon>fas fa-pen-alt</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Builder</v-list-item-title>
           </v-list-item>
           <!-- custom -->
           <v-list-item :to="{ name: 'Custom' }">
